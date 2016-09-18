@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+        
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/google-material-color/dist/palette.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+
+        <!-- Following CSS is used only fore demo purposes thus you can remove anytime -->
+        <link href="css/demo.css" rel="stylesheet">
+    </head>
+
+    <body data-ma-header="teal">
+        <header id="header" class="media">
+            <div class="pull-left h-logo">
+                <a href="index.html" class="hidden-xs">
+                    Material
+                    <small>admin extended</small>
+                </a>
+
+                <div class="menu-collapse" data-ma-action="sidebar-open" data-ma-target="main-menu">
+                    <div class="mc-wrap">
+                        <div class="mcw-line top palette-White bg"></div>
+                        <div class="mcw-line center palette-White bg"></div>
+                        <div class="mcw-line bottom palette-White bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="pull-right h-menu">
+                <li class="hm-search-trigger">
+                    <a href="" data-ma-action="search-open">
+                        <i class="hm-icon zmdi zmdi-search"></i>
+                    </a>
+                </li>
+
+                <li class="dropdown hidden-xs hidden-sm h-apps">
+                    <a data-toggle="dropdown" href="">
+                        <i class="hm-icon zmdi zmdi-apps"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="">
+                                <i class="palette-Red-400 bg zmdi zmdi-calendar"></i>
+                                <small>Calendar</small>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="palette-Green-400 bg zmdi zmdi-file-text"></i>
+                                <small>Files</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="palette-Light-Blue bg zmdi zmdi-email"></i>
+                                <small>Mail</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="palette-Orange-400 bg zmdi zmdi-trending-up"></i>
+                                <small>Analytics</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="palette-Purple-300 bg zmdi zmdi-view-headline"></i>
+                                <small>News</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="palette-Blue-Grey bg zmdi zmdi-image"></i>
+                                <small>Gallery</small>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown hidden-xs">
+                    <a data-toggle="dropdown" href=""><i class="hm-icon zmdi zmdi-more-vert"></i></a>
+                    <ul class="dropdown-menu dm-icon pull-right">
+                        <li class="hidden-xs">
+                            <a data-action="fullscreen" href=""><i class="zmdi zmdi-fullscreen"></i> Toggle Fullscreen</a>
+                        </li>
+                        <li>
+                            <a data-action="clear-localstorage" href=""><i class="zmdi zmdi-delete"></i> Clear Local Storage</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="zmdi zmdi-face"></i> Privacy Settings</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="zmdi zmdi-settings"></i> Other Settings</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hm-alerts" data-user-alert="sua-messages" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                    <a href=""><i class="hm-icon zmdi zmdi-notifications"></i></a>
+                </li>
+                <li class="dropdown hm-profile">
+                    <a data-toggle="dropdown" href="">
+                        <img src="img/profile-pics/1.jpg" alt="">
+                    </a>
+
+                    <ul class="dropdown-menu pull-right dm-icon">
+                        <li>
+                            <a href="profile-about.html"><i class="zmdi zmdi-account"></i> View Profile</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="zmdi zmdi-input-antenna"></i> Privacy Settings</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="zmdi zmdi-settings"></i> Settings</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="zmdi zmdi-time-restore"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="media-body h-search">
+                <form class="p-relative">
+                    <input type="text" class="hs-input" placeholder="Search for people, files & reports">
+                    <i class="zmdi zmdi-search hs-reset" data-ma-action="search-clear"></i>
+                </form>
+            </div>
+
+        </header>
+
+        <section id="main">
+            <aside id="s-user-alerts" class="sidebar">
+                <ul class="tab-nav tn-justified tn-icon m-t-10" data-tab-color="teal">
+                    <li><a class="sua-messages" href="#sua-messages" data-toggle="tab"><i class="zmdi zmdi-email"></i></a></li>
+                    <li><a class="sua-notifications" href="#sua-notifications" data-toggle="tab"><i class="zmdi zmdi-notifications"></i></a></li>
+                    <li><a class="sua-tasks" href="#sua-tasks" data-toggle="tab"><i class="zmdi zmdi-view-list-alt"></i></a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="sua-messages">
+                        <ul class="sua-menu list-inline list-unstyled palette-Light-Blue bg">
+                            <li><a href=""><i class="zmdi zmdi-check-all"></i> Mark all</a></li>
+                            <li><a href=""><i class="zmdi zmdi-long-arrow-tab"></i> View all</a></li>
+                            <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
+                        </ul>
+
+                        <div class="list-group lg-alt c-overflow">
+                            <a href="" class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="lgi-heading">David Villa Jacobs</div>
+                                    <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere</small>
+                                </div>
+                            </a>
+
+                            <a href="" class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <div class="lgi-heading">Candice Barnes</div>
+                                    <small class="lgi-text">Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.</small>
+                                </div>
+                            </a>
+
+                            <a href="" class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <div class="lgi-heading">Jeannette Lawson</div>
+                                    <small class="lgi-text">Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</small>
+                                </div>
+                            </a>
+
+                            <a href="" class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <div class="lgi-heading">Darla Mckinney</div>
+                                    <small class="lgi-text">Duis tincidunt augue nec sem dignissim scelerisque. Vestibulum rhoncus sapien sed nulla aliquam lacinia</small>
+                                </div>
+                            </a>
+
+                            <a href="" class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <div class="lgi-heading">Rudolph Perez</div>
+                                    <small class="lgi-text">Phasellus a ullamcorper lectus, sit amet viverra quam. In luctus tortor vel nulla pharetra bibendum</small>
+                                </div>
+                            </a>
+                        </div>
+
+                        <a href="" class="btn btn-float btn-danger m-btn">
+                            <i class="zmdi zmdi-plus"></i>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="sua-notifications">
+                        <ul class="sua-menu list-inline list-unstyled palette-Orange bg">
+                            <li><a href=""><i class="zmdi zmdi-volume-off"></i> Mute</a></li>
+                            <li><a href=""><i class="zmdi zmdi-long-arrow-tab"></i> View all</a></li>
+                            <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
+                        </ul>
+
+                        <div class="list-group lg-alt c-overflow">
+                            <a href="" class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="lgi-heading">David Villa Jacobs</div>
+                                    <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere</small>
+                                </div>
+                            </a>
+
+                            <a href="" class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <div class="lgi-heading">Candice Barnes</div>
+                                    <small class="lgi-text">Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.</small>
+                                </div>
+                            </a>
+
+                            <a href="" class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <div class="lgi-heading">Jeannette Lawson</div>
+                                    <small class="lgi-text">Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</small>
+                                </div>
+                            </a>
+
+                            <a href="" class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <div class="lgi-heading">Darla Mckinney</div>
+                                    <small class="lgi-text">Duis tincidunt augue nec sem dignissim scelerisque. Vestibulum rhoncus sapien sed nulla aliquam lacinia</small>
+                                </div>
+                            </a>
+
+                            <a href="" class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <div class="lgi-heading">Rudolph Perez</div>
+                                    <small class="lgi-text">Phasellus a ullamcorper lectus, sit amet viverra quam. In luctus tortor vel nulla pharetra bibendum</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="sua-tasks">
+                        <ul class="sua-menu list-inline list-unstyled palette-Green-400 bg">
+                            <li><a href=""><i class="zmdi zmdi-time"></i> Archived</a></li>
+                            <li><a href=""><i class="zmdi zmdi-check-all"></i> Mark all</a></li>
+                            <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
+                        </ul>
+
+                        <div class="list-group lg-alt c-overflow">
+                            <div class="list-group-item">
+                                <div class="lgi-heading m-b-5">HTML5 Validation Report</div>
+
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                        <span class="sr-only">95% Complete (success)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="lgi-heading m-b-5">Google Chrome Extension</div>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <span class="sr-only">80% Complete (success)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="lgi-heading m-b-5">Social Intranet Projects</div>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                        <span class="sr-only">20% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="lgi-heading m-b-5">Bootstrap Admin Template</div>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <span class="sr-only">60% Complete (warning)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="lgi-heading m-b-5">Youtube Client App</div>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <span class="sr-only">80% Complete (danger)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="" class="btn btn-float btn-danger m-btn">
+                            <i class="zmdi zmdi-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <aside id="s-main-menu" class="sidebar">
+                <div class="smm-header">
+                    <i class="zmdi zmdi-long-arrow-left" data-ma-action="sidebar-close"></i>
+                </div>
+
+                <ul class="smm-alerts">
+                    <li data-user-alert="sua-messages" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                        <i class="zmdi zmdi-email"></i>
+                    </li>
+                    <li data-user-alert="sua-notifications" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                        <i class="zmdi zmdi-notifications"></i>
+                    </li>
+                    <li data-user-alert="sua-tasks" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                        <i class="zmdi zmdi-view-list-alt"></i>
+                    </li>
+                </ul>
+
+                <ul class="main-menu">
+                    <li>
+                        <a href="index.html"><i class="zmdi zmdi-home"></i> Home</a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-compact"></i> Headers</a>
+
+                        <ul>
+                            <li><a href="alternative-header.html">Altenative</a></li>
+                            <li><a href="colored-header.html">Colored</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="typography.html"><i class="zmdi zmdi-format-underlined"></i> Typography</a></li>
+                    <li><a href="widgets.html"><i class="zmdi zmdi-widgets"></i> Widgets</a></li>
+                    <li class="sub-menu">
+                        <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-list"></i> Tables</a>
+
+                        <ul>
+                            <li><a href="tables.html">Normal Tables</a></li>
+                            <li><a href="data-tables.html">Data Tables</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-collection-text"></i> Forms</a>
+
+                        <ul>
+                            <li><a href="form-elements.html">Basic Form Elements</a></li>
+                            <li><a href="form-components.html">Form Components</a></li>
+                            <li><a href="form-examples.html">Form Examples</a></li>
+                            <li><a href="form-validations.html">Form Validation</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu active">
+                        <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-swap-alt"></i>User Interface</a>
+                        <ul>
+                            <li class="active"><a href="colors.html">Colors</a></li>
+                            <li><a href="animations.html">Animations</a></li>
+                            <li><a href="box-shadow.html">Box Shadow</a></li>
+                            <li><a href="buttons.html">Buttons</a></li>
+                            <li><a href="icons.html">Icons</a></li>
+                            <li><a href="alerts.html">Alerts</a></li>
+                            <li><a href="preloaders.html">Preloaders</a></li>
+                            <li><a href="notification-dialog.html">Notifications & Dialogs</a></li>
+                            <li><a href="media.html">Media</a></li>
+                            <li><a href="components.html">Components</a></li>
+                            <li><a href="other-components.html">Others</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="flot-charts.html"><i class="zmdi zmdi-trending-up"></i> Flot Charts</a></li>
+                    <li class="sub-menu">
+                        <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-image"></i>Photo Gallery</a>
+                        <ul>
+                            <li><a href="photos.html">Default</a></li>
+                            <li><a href="photo-timeline.html">Timeline</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="calendar.html"><i class="zmdi zmdi-calendar"></i> Calendar</a></li>
+                    <li><a href="generic-classes.html"><i class="zmdi zmdi-layers"></i> Generic Classes</a></li>
+                    <li class="sub-menu">
+                        <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-collection-item"></i> Sample Pages</a>
+                        <ul>
+                            <li><a href="profile-about.html">Profile</a></li>
+                            <li><a href="list-view.html">List View</a></li>
+                            <li><a href="messages.html">Messages</a></li>
+                            <li><a href="pricing-table.html">Pricing Table</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="wall.html">Wall</a></li>
+                            <li><a href="invoice.html">Invoice</a></li>
+                            <li><a href="login.html">Login and Sign Up</a></li>
+                            <li><a href="lockscreen.html">Lockscreen</a></li>
+                            <li><a href="404.html">Error 404</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-menu"></i> 3 Level Menu</a>
+
+                        <ul>
+                            <li><a href="form-elements.html">Level 2 link</a></li>
+                            <li><a href="form-components.html">Another level 2 Link</a></li>
+                            <li class="sub-menu">
+                                <a href="" data-ma-action="submenu-toggle">I have children too</a>
+
+                                <ul>
+                                    <li><a href="">Level 3 link</a></li>
+                                    <li><a href="">Another Level 3 link</a></li>
+                                    <li><a href="">Third one</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="form-validations.html">One more 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        
+            <section id="content">
+                <div class="container">
+                    <div class="c-header">
+                        <h2>Colors</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>
+                                Using Material Colors
+                                <small>Can be used as CSS classes or LESS variables as you prefer</small>
+                            </h2>
+                        </div>
+
+                        <div class="card-body card-padding">
+                            <p class="c-black">Available Colors</p>
+                            <blockquote class="m-b-25">
+                                <p>Red, Pink, Purple, Deep Purple, Indigo, Blue, Light Blue, Cyan, Teal, Green, Light Green, Lime, Yellow, Amber, Orange, Deep Orange, Brown, Grey, Blue Grey</p>
+                            </blockquote>
+
+                            <p class="c-black">Available Shades (note that not all color have all the shades)</p>
+                            <blockquote>
+                                <p>50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, A100, A200, A400, A700</p>
+                            </blockquote>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="c-black f-500 m-b-5">CSS Usage</p>
+                                    <p>The CSS class follows the pattern palette-[color]-[shade]</p>
+
+                            <pre class="m-t-20">
+    &lt;!-- For background-color use '.bg'--&gt;
+    &lt;div class="palette-Light-Blue-700 bg"&gt;
+        The background is Light Blue
+    &lt;/div&gt;
+
+
+    &lt;!-- For color use '.text'--&gt;
+    &lt;div class="palette-Light-Blue-700 text"&gt;
+        The text is Light Blue
+    &lt;/div&gt;</pre>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="c-black f-500 m-b-5">LESS Usage</p>
+                                    <p>The shade is optional (500 is the default shade).</p>
+
+                            <pre class="m-t-20">
+    .my-div {
+      .palette('Light Blue', '700');
+      background-color: @palette;
+
+      // get @palette in its own scope otherwise @palette will be overwritten
+      &{
+        .palette('Red'); // default shade is 500
+        color: @palette;
+      }
+    }</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>
+                                Colors with Shades
+                                <small>These colors are inspired by bold color statements juxtaposed with muted environments, taking cues from contemporary architecture, road signs, pavement marking tape, and sports courts. Emphasize bold shadows and highlights. Introduce unexpected and vibrant colors. (Taken from Google's color page)</small>
+                            </h2>
+                        </div>
+
+                        <div class="card-body card-padding">
+                            <div class="row">
+
+                                <!-- Red -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Red bg">
+                                            <span class="d-block m-b-30">Red</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#f44336</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Red-50 bg"><span>50</span><span class="pull-right">#ffebee</span></li>
+                                        <li class="cg-list dark palette-Red-100 bg"><span>100</span><span class="pull-right">#ffcdd2</span></li>
+                                        <li class="cg-list dark palette-Red-200 bg"><span>200</span><span class="pull-right">#ef9a9a</span></li>
+                                        <li class="cg-list palette-Red-300 bg"><span>300</span><span class="pull-right">#e57373</span></li>
+                                        <li class="cg-list palette-Red-400 bg"><span>400</span><span class="pull-right">#ef5350</span></li>
+                                        <li class="cg-list palette-Red-500 bg"><span>500</span><span class="pull-right">#f44336</span></li>
+                                        <li class="cg-list palette-Red-600 bg"><span>600</span><span class="pull-right">#e53935</span></li>
+                                        <li class="cg-list palette-Red-700 bg"><span>700</span><span class="pull-right">#d32f2f</span></li>
+                                        <li class="cg-list palette-Red-800 bg"><span>800</span><span class="pull-right">#c62828</span></li>
+                                        <li class="cg-list palette-Red-900 bg"><span>900</span><span class="pull-right">#b71c1c</span></li>
+                                        <li class="cg-list dark divide palette-Red-A100 bg"><span>A100</span><span class="pull-right">#ff8a80</span></li>
+                                        <li class="cg-list light-strong palette-Red-A200 bg"><span>A200</span><span class="pull-right">#ff5252</span></li>
+                                        <li class="cg-list palette-Red-A400 bg"><span>A400</span><span class="pull-right">#ff1744</span></li>
+                                        <li class="cg-list palette-Red-A700 bg"><span>A700</span><span class="pull-right">#d50000</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Pink -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Pink bg">
+                                            <span class="d-block m-b-30">Pink</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#e91e63</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Pink-50 bg"><span>50</span><span class="pull-right">#fce4ec</span></li>
+                                        <li class="cg-list dark palette-Pink-100 bg"><span>100</span><span class="pull-right">#f8bbd0</span></li>
+                                        <li class="cg-list dark palette-Pink-200 bg"><span>200</span><span class="pull-right">#f48fb1</span></li>
+                                        <li class="cg-list light-strong palette-Pink-300 bg"><span>300</span><span class="pull-right">#f06292</span></li>
+                                        <li class="cg-list palette-Pink-400 bg"><span>400</span><span class="pull-right">#ec407a</span></li>
+                                        <li class="cg-list palette-Pink-500 bg"><span>500</span><span class="pull-right">#e91e63</span></li>
+                                        <li class="cg-list palette-Pink-600 bg"><span>600</span><span class="pull-right">#d81b60</span></li>
+                                        <li class="cg-list palette-Pink-700 bg"><span>700</span><span class="pull-right">#c2185b</span></li>
+                                        <li class="cg-list palette-Pink-800 bg"><span>800</span><span class="pull-right">#ad1457</span></li>
+                                        <li class="cg-list palette-Pink-900 bg"><span>900</span><span class="pull-right">#880e4f</span></li>
+                                        <li class="cg-list dark divide palette-Pink-A100 bg"><span>A100</span><span class="pull-right">#ff80ab</span></li>
+                                        <li class="cg-list light-strong palette-Pink-A200 bg"><span>A200</span><span class="pull-right">#ff4081</span></li>
+                                        <li class="cg-list palette-Pink-A400 bg"><span>A400</span><span class="pull-right">#f50057</span></li>
+                                        <li class="cg-list palette-Pink-A700 bg"><span>A700</span><span class="pull-right">#c51162</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Purple -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Purple bg">
+                                            <span class="d-block m-b-30">Purple</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#9c27b0</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Purple-50 bg"><span>50</span><span class="pull-right">#f3e5f5</span></li>
+                                        <li class="cg-list dark palette-Purple-100 bg"><span>100</span><span class="pull-right">#e1bee7</span></li>
+                                        <li class="cg-list dark palette-Purple-200 bg"><span>200</span><span class="pull-right">#ce93d8</span></li>
+                                        <li class="cg-list light-strong palette-Purple-300 bg"><span>300</span><span class="pull-right">#ba68c8</span></li>
+                                        <li class="cg-list light-strong palette-Purple-400 bg"><span>400</span><span class="pull-right">#ab47bc</span></li>
+                                        <li class="cg-list palette-Purple-500 bg"><span>500</span><span class="pull-right">#9c27b0</span></li>
+                                        <li class="cg-list palette-Purple-600 bg"><span>600</span><span class="pull-right">#8e24aa</span></li>
+                                        <li class="cg-list palette-Purple-700 bg"><span>700</span><span class="pull-right">#7b1fa2</span></li>
+                                        <li class="cg-list palette-Purple-800 bg"><span>800</span><span class="pull-right">#6a1b9a</span></li>
+                                        <li class="cg-list palette-Purple-900 bg"><span>900</span><span class="pull-right">#4a148c</span></li>
+                                        <li class="cg-list dark divide palette-Purple-A100 bg"><span>A100</span><span class="pull-right">#ea80fc</span></li>
+                                        <li class="cg-list light-strong palette-Purple-A200 bg"><span>A200</span><span class="pull-right">#e040fb</span></li>
+                                        <li class="cg-list palette-Purple-A400 bg"><span>A400</span><span class="pull-right">#d500f9</span></li>
+                                        <li class="cg-list palette-Purple-A700 bg"><span>A700</span><span class="pull-right">#aa00ff</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Deep Purple -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Deep-Purple bg">
+                                            <span class="d-block m-b-30">Deep Purple</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#673ab7</span>
+                                        </li>
+                                        <li class="cg-list palette-Deep-Purple-50 bg dark"><span>50</span><span class="pull-right">#ede7f6</span></li>
+                                        <li class="cg-list palette-Deep-Purple-100 bg dark"><span>100</span><span class="pull-right">#d1c4e9</span></li>
+                                        <li class="cg-list palette-Deep-Purple-200 bg dark"><span>200</span><span class="pull-right">#b39ddb</span></li>
+                                        <li class="cg-list palette-Deep-Purple-300 bg"><span>300</span><span class="pull-right">#9575cd</span></li>
+                                        <li class="cg-list palette-Deep-Purple-400 bg"><span>400</span><span class="pull-right">#7e57c2</span></li>
+                                        <li class="cg-list palette-Deep-Purple-500 bg"><span>500</span><span class="pull-right">#673ab7</span></li>
+                                        <li class="cg-list palette-Deep-Purple-600 bg"><span>600</span><span class="pull-right">#5e35b1</span></li>
+                                        <li class="cg-list palette-Deep-Purple-700 bg"><span>700</span><span class="pull-right">#512da8</span></li>
+                                        <li class="cg-list palette-Deep-Purple-800 bg"><span>800</span><span class="pull-right">#4527a0</span></li>
+                                        <li class="cg-list palette-Deep-Purple-900 bg"><span>900</span><span class="pull-right">#311b92</span></li>
+                                        <li class="cg-list palette-Deep-Purple-A100 bg dark divide"><span>A100</span><span class="pull-right">#b388ff</span></li>
+                                        <li class="cg-list palette-Deep-Purple-A200 bg light-strong"><span>A200</span><span class="pull-right">#7c4dff</span></li>
+                                        <li class="cg-list palette-Deep-Purple-A400 bg"><span>A400</span><span class="pull-right">#651fff</span></li>
+                                        <li class="cg-list palette-Deep-Purple-A700 bg"><span>A700</span><span class="pull-right">#6200ea</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Indigo -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Indigo bg">
+                                            <span class="d-block m-b-30">Indigo</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#3f51b5</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Indigo-50 bg"><span>50</span><span class="pull-right">#e8eaf6</span></li>
+                                        <li class="cg-list dark palette-Indigo-100 bg"><span>100</span><span class="pull-right">#c5cae9</span></li>
+                                        <li class="cg-list dark palette-Indigo-200 bg"><span>200</span><span class="pull-right">#9fa8da</span></li>
+                                        <li class="cg-list palette-Indigo-300 bg"><span>300</span><span class="pull-right">#7986cb</span></li>
+                                        <li class="cg-list palette-Indigo-400 bg"><span>400</span><span class="pull-right">#5c6bc0</span></li>
+                                        <li class="cg-list palette-Indigo-500 bg"><span>500</span><span class="pull-right">#3f51b5</span></li>
+                                        <li class="cg-list palette-Indigo-600 bg"><span>600</span><span class="pull-right">#3949ab</span></li>
+                                        <li class="cg-list palette-Indigo-700 bg"><span>700</span><span class="pull-right">#303f9f</span></li>
+                                        <li class="cg-list palette-Indigo-800 bg"><span>800</span><span class="pull-right">#283593</span></li>
+                                        <li class="cg-list palette-Indigo-900 bg"><span>900</span><span class="pull-right">#1a237e</span></li>
+                                        <li class="cg-list dark divide palette-Indigo-A100 bg"><span>A100</span><span class="pull-right">#8c9eff</span></li>
+                                        <li class="cg-list palette-Indigo-A200 bg"><span>A200</span><span class="pull-right">#536dfe</span></li>
+                                        <li class="cg-list palette-Indigo-A400 bg"><span>A400</span><span class="pull-right">#3d5afe</span></li>
+                                        <li class="cg-list palette-Indigo-A700 bg"><span>A700</span><span class="pull-right">#304ffe</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Blue -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Blue bg">
+                                            <span class="d-block m-b-30">Blue</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#2196f3</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Blue-50 bg"><span>50</span><span class="pull-right">#e3f2fd</span></li>
+                                        <li class="cg-list dark palette-Blue-100 bg"><span>100</span><span class="pull-right">#bbdefb</span></li>
+                                        <li class="cg-list dark palette-Blue-200 bg"><span>200</span><span class="pull-right">#90caf9</span></li>
+                                        <li class="cg-list palette-Blue-300 bg"><span>300</span><span class="pull-right">#64b5f6</span></li>
+                                        <li class="cg-list palette-Blue-400 bg"><span>400</span><span class="pull-right">#42a5f5</span></li>
+                                        <li class="cg-list light-strong palette-Blue-500 bg"><span>500</span><span class="pull-right">#2196f3</span></li>
+                                        <li class="cg-list palette-Blue-600 bg"><span>600</span><span class="pull-right">#1e88e5</span></li>
+                                        <li class="cg-list palette-Blue-700 bg"><span>700</span><span class="pull-right">#1976d2</span></li>
+                                        <li class="cg-list palette-Blue-800 bg"><span>800</span><span class="pull-right">#1565c0</span></li>
+                                        <li class="cg-list palette-Blue-900 bg"><span>900</span><span class="pull-right">#0d47a1</span></li>
+                                        <li class="cg-list dark divide palette-Blue-A100 bg"><span>A100</span><span class="pull-right">#82b1ff</span></li>
+                                        <li class="cg-list light-strong palette-Blue-A200 bg"><span>A200</span><span class="pull-right">#448aff</span></li>
+                                        <li class="cg-list palette-Blue-A400 bg"><span>A400</span><span class="pull-right">#2979ff</span></li>
+                                        <li class="cg-list palette-Blue-A700 bg"><span>A700</span><span class="pull-right">#2962ff</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Light blue -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Light-Blue bg">
+                                            <span class="d-block m-b-30">Light Blue</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#03a9f4</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Light-Blue-50 bg"><span>50</span><span class="pull-right">#e1f5fe</span></li>
+                                        <li class="cg-list dark palette-Light-Blue-100 bg"><span>100</span><span class="pull-right">#b3e5fc</span></li>
+                                        <li class="cg-list dark palette-Light-Blue-200 bg"><span>200</span><span class="pull-right">#81d4fa</span></li>
+                                        <li class="cg-list palette-Light-Blue-300 bg"><span>300</span><span class="pull-right">#4fc3f7</span></li>
+                                        <li class="cg-list palette-Light-Blue-400 bg"><span>400</span><span class="pull-right">#29b6f6</span></li>
+                                        <li class="cg-list palette-Light-Blue-500 bg"><span>500</span><span class="pull-right">#03a9f4</span></li>
+                                        <li class="cg-list light-strong palette-Light-Blue-600 bg"><span>600</span><span class="pull-right">#039be5</span></li>
+                                        <li class="cg-list palette-Light-Blue-700 bg"><span>700</span><span class="pull-right">#0288d1</span></li>
+                                        <li class="cg-list palette-Light-Blue-800 bg"><span>800</span><span class="pull-right">#0277bd</span></li>
+                                        <li class="cg-list palette-Light-Blue-900 bg"><span>900</span><span class="pull-right">#01579b</span></li>
+                                        <li class="cg-list dark divide palette-Light-Blue-A100 bg"><span>A100</span><span class="pull-right">#80d8ff</span></li>
+                                        <li class="cg-list palette-Light-Blue-A200 bg"><span>A200</span><span class="pull-right">#40c4ff</span></li>
+                                        <li class="cg-list palette-Light-Blue-A400 bg"><span>A400</span><span class="pull-right">#00b0ff</span></li>
+                                        <li class="cg-list light-strong palette-Light-Blue-A700 bg"><span>A700</span><span class="pull-right">#0091ea</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Cyan -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Cyan bg">
+                                            <span class="d-block m-b-30">Cyan</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#00bcd4</span>
+                                        </li>
+                                        <li class="cg-list dark cgl-main palette-Cyan-50 bg"><span>50</span><span class="pull-right">#e0f7fa</span></li>
+                                        <li class="cg-list dark cgl-main palette-Cyan-100 bg"><span>100</span><span class="pull-right">#b2ebf2</span></li>
+                                        <li class="cg-list dark cgl-main palette-Cyan-200 bg"><span>200</span><span class="pull-right">#80deea</span></li>
+                                        <li class="cg-list cgl-main palette-Cyan-300 bg"><span>300</span><span class="pull-right">#4dd0e1</span></li>
+                                        <li class="cg-list cgl-main palette-Cyan-400 bg"><span>400</span><span class="pull-right">#26c6da</span></li>
+                                        <li class="cg-list cgl-main palette-Cyan-500 bg"><span>500</span><span class="pull-right">#00bcd4</span></li>
+                                        <li class="cg-list cgl-main palette-Cyan-600 bg"><span>600</span><span class="pull-right">#00acc1</span></li>
+                                        <li class="cg-list cgl-main palette-Cyan-700 bg"><span>700</span><span class="pull-right">#0097a7</span></li>
+                                        <li class="cg-list cgl-main palette-Cyan-800 bg"><span>800</span><span class="pull-right">#00838f</span></li>
+                                        <li class="cg-list cgl-main palette-Cyan-900 bg"><span>900</span><span class="pull-right">#006064</span></li>
+                                        <li class="cg-list dark divide cgl-main palette-Cyan-A100 bg"><span>A100</span><span class="pull-right">#84ffff</span></li>
+                                        <li class="cg-list dark cgl-main palette-Cyan-A200 bg"><span>A200</span><span class="pull-right">#18ffff</span></li>
+                                        <li class="cg-list dark cgl-main palette-Cyan-A400 bg"><span>A400</span><span class="pull-right">#00e5ff</span></li>
+                                        <li class="cg-list dark cgl-main palette-Cyan-A700 bg"><span>A700</span><span class="pull-right">#00b8d4</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Teal -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Teal bg">
+                                            <span class="d-block m-b-30">Teal</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#009688</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Teal-50 bg"><span>50</span><span class="pull-right">#e0f2f1</span></li>
+                                        <li class="cg-list dark palette-Teal-100 bg"><span>100</span><span class="pull-right">#b2dfdb</span></li>
+                                        <li class="cg-list dark palette-Teal-200 bg"><span>200</span><span class="pull-right">#80cbc4</span></li>
+                                        <li class="cg-list palette-Teal-300 bg"><span>300</span><span class="pull-right">#4db6ac</span></li>
+                                        <li class="cg-list palette-Teal-400 bg"><span>400</span><span class="pull-right">#26a69a</span></li>
+                                        <li class="cg-list light-strong palette-Teal-500 bg"><span>500</span><span class="pull-right">#009688</span></li>
+                                        <li class="cg-list light-strong palette-Teal-600 bg"><span>600</span><span class="pull-right">#00897b</span></li>
+                                        <li class="cg-list light-strong palette-Teal-700 bg"><span>700</span><span class="pull-right">#00796b</span></li>
+                                        <li class="cg-list palette-Teal-800 bg"><span>800</span><span class="pull-right">#00695c</span></li>
+                                        <li class="cg-list palette-Teal-900 bg"><span>900</span><span class="pull-right">#004d40</span></li>
+                                        <li class="cg-list dark divide palette-Teal-A100 bg"><span>A100</span><span class="pull-right">#a7ffeb</span></li>
+                                        <li class="cg-list dark palette-Teal-A200 bg"><span>A200</span><span class="pull-right">#64ffda</span></li>
+                                        <li class="cg-list dark palette-Teal-A400 bg"><span>A400</span><span class="pull-right">#1de9b6</span></li>
+                                        <li class="cg-list dark palette-Teal-A700 bg"><span>A700</span><span class="pull-right">#00bfa5</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Green -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Green bg">
+                                            <span class="d-block m-b-30">Green</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#4caf50</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Green-50 bg"><span>50</span><span class="pull-right">#e8f5e9</span></li>
+                                        <li class="cg-list dark palette-Green-100 bg"><span>100</span><span class="pull-right">#c8e6c9</span></li>
+                                        <li class="cg-list dark palette-Green-200 bg"><span>200</span><span class="pull-right">#a5d6a7</span></li>
+                                        <li class="cg-list palette-Green-300 bg"><span>300</span><span class="pull-right">#81c784</span></li>
+                                        <li class="cg-list palette-Green-400 bg"><span>400</span><span class="pull-right">#66bb6a</span></li>
+                                        <li class="cg-list palette-Green-500 bg"><span>500</span><span class="pull-right">#4caf50</span></li>
+                                        <li class="cg-list light-strong palette-Green-600 bg"><span>600</span><span class="pull-right">#43a047</span></li>
+                                        <li class="cg-list palette-Green-700 bg"><span>700</span><span class="pull-right">#388e3c</span></li>
+                                        <li class="cg-list palette-Green-800 bg"><span>800</span><span class="pull-right">#2e7d32</span></li>
+                                        <li class="cg-list palette-Green-900 bg"><span>900</span><span class="pull-right">#1b5e20</span></li>
+                                        <li class="cg-list dark divide palette-Green-A100 bg"><span>A100</span><span class="pull-right">#b9f6ca</span></li>
+                                        <li class="cg-list dark palette-Green-A200 bg"><span>A200</span><span class="pull-right">#69f0ae</span></li>
+                                        <li class="cg-list dark palette-Green-A400 bg"><span>A400</span><span class="pull-right">#00e676</span></li>
+                                        <li class="cg-list dark palette-Green-A700 bg"><span>A700</span><span class="pull-right">#00c853</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Light Green-->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Light-Green bg">
+                                            <span class="d-block m-b-30">Light Green</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#8bc34a</span>
+                                        </li>
+                                        <li class="cg-list dark cgl-main palette-Light-Green-50 bg"><span>50</span><span class="pull-right">#f1f8e9</span></li>
+                                        <li class="cg-list dark cgl-main palette-Light-Green-100 bg"><span>100</span><span class="pull-right">#dcedc8</span></li>
+                                        <li class="cg-list dark cgl-main palette-Light-Green-200 bg"><span>200</span><span class="pull-right">#c5e1a5</span></li>
+                                        <li class="cg-list cgl-main palette-Light-Green-300 bg"><span>300</span><span class="pull-right">#aed581</span></li>
+                                        <li class="cg-list cgl-main palette-Light-Green-400 bg"><span>400</span><span class="pull-right">#9ccc65</span></li>
+                                        <li class="cg-list cgl-main palette-Light-Green-500 bg"><span>500</span><span class="pull-right">#8bc34a</span></li>
+                                        <li class="cg-list cgl-main palette-Light-Green-600 bg"><span>600</span><span class="pull-right">#7cb342</span></li>
+                                        <li class="cg-list light-strong cgl-main palette-Light-Green-700 bg"><span>700</span><span class="pull-right">#689f38</span></li>
+                                        <li class="cg-list cgl-main palette-Light-Green-800 bg"><span>800</span><span class="pull-right">#558b2f</span></li>
+                                        <li class="cg-list cgl-main palette-Light-Green-900 bg"><span>900</span><span class="pull-right">#33691e</span></li>
+                                        <li class="cg-list dark divide cgl-main palette-Light-Green-A100 bg"><span>A100</span><span class="pull-right">#ccff90</span></li>
+                                        <li class="cg-list dark cgl-main palette-Light-Green-A200 bg"><span>A200</span><span class="pull-right">#b2ff59</span></li>
+                                        <li class="cg-list dark cgl-main palette-Light-Green-A400 bg"><span>A400</span><span class="pull-right">#76ff03</span></li>
+                                        <li class="cg-list dark cgl-main palette-Light-Green-A700 bg"><span>A700</span><span class="pull-right">#64dd17</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Lime -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Lime bg">
+                                            <span class="d-block m-b-30">Lime</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#cddc39</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Lime-50 bg"><span>50</span><span class="pull-right">#f9fbe7</span></li>
+                                        <li class="cg-list dark palette-Lime-100 bg"><span>100</span><span class="pull-right">#f0f4c3</span></li>
+                                        <li class="cg-list dark palette-Lime-200 bg"><span>200</span><span class="pull-right">#e6ee9c</span></li>
+                                        <li class="cg-list dark palette-Lime-300 bg"><span>300</span><span class="pull-right">#dce775</span></li>
+                                        <li class="cg-list dark palette-Lime-400 bg"><span>400</span><span class="pull-right">#d4e157</span></li>
+                                        <li class="cg-list dark palette-Lime-500 bg"><span>500</span><span class="pull-right">#cddc39</span></li>
+                                        <li class="cg-list dark palette-Lime-600 bg"><span>600</span><span class="pull-right">#c0ca33</span></li>
+                                        <li class="cg-list dark palette-Lime-700 bg"><span>700</span><span class="pull-right">#afb42b</span></li>
+                                        <li class="cg-list dark palette-Lime-800 bg"><span>800</span><span class="pull-right">#9e9d24</span></li>
+                                        <li class="cg-list palette-Lime-900 bg"><span>900</span><span class="pull-right">#827717</span></li>
+                                        <li class="cg-list dark divide palette-Lime-A100 bg"><span>A100</span><span class="pull-right">#f4ff81</span></li>
+                                        <li class="cg-list dark palette-Lime-A200 bg"><span>A200</span><span class="pull-right">#eeff41</span></li>
+                                        <li class="cg-list dark palette-Lime-A400 bg"><span>A400</span><span class="pull-right">#c6ff00</span></li>
+                                        <li class="cg-list dark palette-Lime-A700 bg"><span>A700</span><span class="pull-right">#aeea00</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Yellow -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main dark palette-Yellow bg">
+                                            <span class="d-block m-b-30">Yellow</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#ffeb3b</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Yellow-50 bg"><span>50</span><span class="pull-right">#fffde7</span></li>
+                                        <li class="cg-list dark palette-Yellow-100 bg"><span>100</span><span class="pull-right">#fff9c4</span></li>
+                                        <li class="cg-list dark palette-Yellow-200 bg"><span>200</span><span class="pull-right">#fff59d</span></li>
+                                        <li class="cg-list dark palette-Yellow-300 bg"><span>300</span><span class="pull-right">#fff176</span></li>
+                                        <li class="cg-list dark palette-Yellow-400 bg"><span>400</span><span class="pull-right">#ffee58</span></li>
+                                        <li class="cg-list dark palette-Yellow-500 bg"><span>500</span><span class="pull-right">#ffeb3b</span></li>
+                                        <li class="cg-list dark palette-Yellow-600 bg"><span>600</span><span class="pull-right">#fdd835</span></li>
+                                        <li class="cg-list palette-Yellow-700 bg"><span>700</span><span class="pull-right">#fbc02d</span></li>
+                                        <li class="cg-list palette-Yellow-800 bg"><span>800</span><span class="pull-right">#f9a825</span></li>
+                                        <li class="cg-list palette-Yellow-900 bg"><span>900</span><span class="pull-right">#f57f17</span></li>
+                                        <li class="cg-list dark divide palette-Yellow-A100 bg"><span>A100</span><span class="pull-right">#ffff8d</span></li>
+                                        <li class="cg-list dark palette-Yellow-A200 bg"><span>A200</span><span class="pull-right">#ffff00</span></li>
+                                        <li class="cg-list dark palette-Yellow-A400 bg"><span>A400</span><span class="pull-right">#ffea00</span></li>
+                                        <li class="cg-list dark palette-Yellow-A700 bg"><span>A700</span><span class="pull-right">#ffd600</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Amber -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Amber bg">
+                                            <span class="d-block m-b-30">Amber</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#ffc107</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Amber-50 bg"><span>50</span><span class="pull-right">#fff8e1</span></li>
+                                        <li class="cg-list dark palette-Amber-100 bg"><span>100</span><span class="pull-right">#ffecb3</span></li>
+                                        <li class="cg-list dark palette-Amber-200 bg"><span>200</span><span class="pull-right">#ffe082</span></li>
+                                        <li class="cg-list dark palette-Amber-300 bg"><span>300</span><span class="pull-right">#ffd54f</span></li>
+                                        <li class="cg-list dark palette-Amber-400 bg"><span>400</span><span class="pull-right">#ffca28</span></li>
+                                        <li class="cg-list dark palette-Amber-500 bg"><span>500</span><span class="pull-right">#ffc107</span></li>
+                                        <li class="cg-list dark palette-Amber-600 bg"><span>600</span><span class="pull-right">#ffb300</span></li>
+                                        <li class="cg-list palette-Amber-700 bg"><span>700</span><span class="pull-right">#ffa000</span></li>
+                                        <li class="cg-list palette-Amber-800 bg"><span>800</span><span class="pull-right">#ff8f00</span></li>
+                                        <li class="cg-list palette-Amber-900 bg"><span>900</span><span class="pull-right">#ff6f00</span></li>
+                                        <li class="cg-list dark divide palette-Amber-A100 bg"><span>A100</span><span class="pull-right">#ffe57f</span></li>
+                                        <li class="cg-list dark palette-Amber-A200 bg"><span>A200</span><span class="pull-right">#ffd740</span></li>
+                                        <li class="cg-list dark palette-Amber-A400 bg"><span>A400</span><span class="pull-right">#ffc400</span></li>
+                                        <li class="cg-list dark palette-Amber-A700 bg"><span>A700</span><span class="pull-right">#ffab00</span></li>
+                                    </ul>
+
+                                </div>
+
+                                <!-- Orange -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Orange bg">
+                                            <span class="d-block m-b-30">Orange</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#ff9800</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Orange-50 bg"><span>50</span><span class="pull-right">#fff3e0</span></li>
+                                        <li class="cg-list dark palette-Orange-100 bg"><span>100</span><span class="pull-right">#ffe0b2</span></li>
+                                        <li class="cg-list dark palette-Orange-200 bg"><span>200</span><span class="pull-right">#ffcc80</span></li>
+                                        <li class="cg-list dark palette-Orange-300 bg"><span>300</span><span class="pull-right">#ffb74d</span></li>
+                                        <li class="cg-list dark palette-Orange-400 bg"><span>400</span><span class="pull-right">#ffa726</span></li>
+                                        <li class="cg-list dark palette-Orange-500 bg"><span>500</span><span class="pull-right">#ff9800</span></li>
+                                        <li class="cg-list dark palette-Orange-600 bg"><span>600</span><span class="pull-right">#fb8c00</span></li>
+                                        <li class="cg-list palette-Orange-700 bg"><span>700</span><span class="pull-right">#f57c00</span></li>
+                                        <li class="cg-list light-strong palette-Orange-800 bg"><span>800</span><span class="pull-right">#ef6c00</span></li>
+                                        <li class="cg-list palette-Orange-900 bg"><span>900</span><span class="pull-right">#e65100</span></li>
+                                        <li class="cg-list dark divide palette-Orange-A100 bg"><span>A100</span><span class="pull-right">#ffd180</span></li>
+                                        <li class="cg-list dark palette-Orange-A200 bg"><span>A200</span><span class="pull-right">#ffab40</span></li>
+                                        <li class="cg-list dark palette-Orange-A400 bg"><span>A400</span><span class="pull-right">#ff9100</span></li>
+                                        <li class="cg-list dark palette-Orange-A700 bg"><span>A700</span><span class="pull-right">#ff6d00</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Deep Orange -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Deep-Orange bg">
+                                            <span class="d-block m-b-30">Deep Orange</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#ff5722</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Deep-Orange-50 bg"><span>50</span><span class="pull-right">#fbe9e7</span></li>
+                                        <li class="cg-list dark palette-Deep-Orange-100 bg"><span>100</span><span class="pull-right">#ffccbc</span></li>
+                                        <li class="cg-list dark palette-Deep-Orange-200 bg"><span>200</span><span class="pull-right">#ffab91</span></li>
+                                        <li class="cg-list palette-Deep-Orange-300 bg"><span>300</span><span class="pull-right">#ff8a65</span></li>
+                                        <li class="cg-list palette-Deep-Orange-400 bg"><span>400</span><span class="pull-right">#ff7043</span></li>
+                                        <li class="cg-list palette-Deep-Orange-500 bg"><span>500</span><span class="pull-right">#ff5722</span></li>
+                                        <li class="cg-list palette-Deep-Orange-600 bg"><span>600</span><span class="pull-right">#f4511e</span></li>
+                                        <li class="cg-list palette-Deep-Orange-700 bg"><span>700</span><span class="pull-right">#e64a19</span></li>
+                                        <li class="cg-list palette-Deep-Orange-800 bg"><span>800</span><span class="pull-right">#d84315</span></li>
+                                        <li class="cg-list palette-Deep-Orange-900 bg"><span>900</span><span class="pull-right">#bf360c</span></li>
+                                        <li class="cg-list dark divide palette-Deep-Orange-A100 bg"><span>A100</span><span class="pull-right">#ff9e80</span></li>
+                                        <li class="cg-list palette-Deep-Orange-A200 bg"><span>A200</span><span class="pull-right">#ff6e40</span></li>
+                                        <li class="cg-list palette-Deep-Orange-A400 bg"><span>A400</span><span class="pull-right">#ff3d00</span></li>
+                                        <li class="cg-list palette-Deep-Orange-A700 bg"><span>A700</span><span class="pull-right">#dd2c00</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Brown -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Brown bg">
+                                            <span class="d-block m-b-30">Brown</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#795548</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Brown-50 bg"><span>50</span><span class="pull-right">#efebe9</span></li>
+                                        <li class="cg-list dark palette-Brown-100 bg"><span>100</span><span class="pull-right">#d7ccc8</span></li>
+                                        <li class="cg-list dark palette-Brown-200 bg"><span>200</span><span class="pull-right">#bcaaa4</span></li>
+                                        <li class="cg-list light-strong palette-Brown-300 bg"><span>300</span><span class="pull-right">#a1887f</span></li>
+                                        <li class="cg-list palette-Brown-400 bg"><span>400</span><span class="pull-right">#8d6e63</span></li>
+                                        <li class="cg-list palette-Brown-500 bg"><span>500</span><span class="pull-right">#795548</span></li>
+                                        <li class="cg-list palette-Brown-600 bg"><span>600</span><span class="pull-right">#6d4c41</span></li>
+                                        <li class="cg-list palette-Brown-700 bg"><span>700</span><span class="pull-right">#5d4037</span></li>
+                                        <li class="cg-list palette-Brown-800 bg"><span>800</span><span class="pull-right">#4e342e</span></li>
+                                        <li class="cg-list palette-Brown-900 bg"><span>900</span><span class="pull-right">#3e2723</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Grey -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Grey bg">
+                                            <span class="d-block m-b-30">Grey</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#9e9e9e</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Grey-50 bg"><span>50</span><span class="pull-right">#fafafa</span></li>
+                                        <li class="cg-list dark palette-Grey-100 bg"><span>100</span><span class="pull-right">#f5f5f5</span></li>
+                                        <li class="cg-list dark palette-Grey-200 bg"><span>200</span><span class="pull-right">#eeeeee</span></li>
+                                        <li class="cg-list dark palette-Grey-300 bg"><span>300</span><span class="pull-right">#e0e0e0</span></li>
+                                        <li class="cg-list dark palette-Grey-400 bg"><span>400</span><span class="pull-right">#bdbdbd</span></li>
+                                        <li class="cg-list dark palette-Grey-500 bg"><span>500</span><span class="pull-right">#9e9e9e</span></li>
+                                        <li class="cg-list palette-Grey-600 bg"><span>600</span><span class="pull-right">#757575</span></li>
+                                        <li class="cg-list palette-Grey-700 bg"><span>700</span><span class="pull-right">#616161</span></li>
+                                        <li class="cg-list palette-Grey-800 bg"><span>800</span><span class="pull-right">#424242</span></li>
+                                        <li class="cg-list palette-Grey-900 bg"><span>900</span><span class="pull-right">#212121</span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                                <!-- Blue Grey -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list cgl-main palette-Blue-Grey bg">
+                                            <span class="d-block m-b-30">Blue Grey</span>
+                                            <span>500</span>
+                                            <span class="pull-right">#607d8b</span>
+                                        </li>
+                                        <li class="cg-list dark palette-Blue-Grey-50 bg"><span>50</span><span class="pull-right">#eceff1</span></li>
+                                        <li class="cg-list dark palette-Blue-Grey-100 bg"><span>100</span><span class="pull-right">#cfd8dc</span></li>
+                                        <li class="cg-list dark palette-Blue-Grey-200 bg"><span>200</span><span class="pull-right">#b0bec5</span></li>
+                                        <li class="cg-list palette-Blue-Grey-300 bg"><span>300</span><span class="pull-right">#90a4ae</span></li>
+                                        <li class="cg-list palette-Blue-Grey-400 bg"><span>400</span><span class="pull-right">#78909c</span></li>
+                                        <li class="cg-list palette-Blue-Grey-500 bg"><span>500</span><span class="pull-right">#607d8b</span></li>
+                                        <li class="cg-list palette-Blue-Grey-600 bg"><span>600</span><span class="pull-right">#546e7a</span></li>
+                                        <li class="cg-list palette-Blue-Grey-700 bg"><span>700</span><span class="pull-right">#455a64</span></li>
+                                        <li class="cg-list palette-Blue-Grey-800 bg"><span>800</span><span class="pull-right">#37474f</span></li>
+                                        <li class="cg-list palette-Blue-Grey-900 bg"><span>900</span><span class="pull-right">#263238</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Black & White -->
+                                <div class="col-md-4 col-sm-6">
+                                    <ul class="color-group">
+                                        <li class="cg-list palette-Black bg"><span>Black</span><span class="pull-right">#000000</span></li>
+                                        <li class="cg-list dark palette-White bg"><span>White</span><span class="pull-right">#ffffff</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="footer">
+                Copyright &copy; 2015 Material Admin
+
+                <ul class="f-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Reports</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </footer>
+
+        </section>
+
+        <!-- Page Loader -->
+        <div class="page-loader palette-Teal bg">
+            <div class="preloader pl-xl pls-white">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="iew-container">
+                    <ul class="iew-download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>   
+        <![endif]-->
+        
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/functions.js"></script>
+        <script src="js/actions.js"></script>
+        <script src="js/demo.js"></script>
+    </body>
+</html>

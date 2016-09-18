@@ -1,0 +1,24 @@
+.ma-header(@color) {
+  &:before,
+  #header {
+    background-color: @color;
+  }
+
+  .smm-alerts > li.active,
+  .main-menu li.active > a {
+    color: @color;
+  }
+}
+
+[data-ma-header="teal"] { .ma-header(@palette-Teal-500); }
+[data-ma-header="blue"] { .ma-header(@palette-Blue-500); }
+[data-ma-header="bluegrey"] { .ma-header(@palette-Blue-Grey-500); }
+[data-ma-header="cyan-600"] { .ma-header(@palette-Cyan-600); }
+[data-ma-header="green"] { .ma-header(@palette-Green-500); }
+[data-ma-header="lightgreen"] { .ma-header(@palette-Light-Green-500); }
+[data-ma-header="purple-400"] { .ma-header(@palette-Purple-400); }
+[data-ma-header="red-400"] { .ma-header(@palette-Red-400); }
+[data-ma-header="pink-400"] { .ma-header(@palette-Pink-400); }
+[data-ma-header="brown"] { .ma-header(@palette-Brown-500); }
+[data-ma-header="grey-600"] { .ma-header(@palette-Grey-600); }
+[data-ma-header="orange"] { .ma-header(@palette-Orange-500); }

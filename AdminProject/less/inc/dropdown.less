@@ -1,0 +1,39 @@
+.dropdown-menu {
+    box-shadow: @dropdown-shadow;
+    .animated(fadeIn, 300ms);
+    padding: 10px 0;
+    border-radius: 3px;
+    top: -1px;
+    margin: 0;
+    border: 0;
+    
+    & > li > a { 
+        padding: 10px 20px;
+        .transition(background-color);
+        .transition-duration(300ms);
+    }
+
+    &.dm-icon {
+        & > li > a > .zmdi {
+            line-height: 100%;
+            vertical-align: top;
+            font-size: 18px;
+            width: 28px;
+        } 
+    }
+}
+
+.dm-dark {
+    & > li {
+        & > a,
+        & > a:hover {
+            color: #fff;
+        }
+    }
+}
+
+.dropdown-header {
+    padding: 10px 16px 5px;
+    color: #B9B9B9;
+    text-transform: uppercase;
+}

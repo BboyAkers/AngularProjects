@@ -1,0 +1,348 @@
+/*----------------------------------
+    Recent Signups
+-----------------------------------*/
+.rs-list {
+    list-style: none;
+    background: rgba(255, 255, 255, 0.16);
+    padding: 25px 30px 20px;
+    text-align: center;
+
+    
+    & > li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 3px 6px 0;
+        
+        & > a {
+            display: block;
+        }
+    }
+    
+    .avatar-char {
+        background: #909090;
+        color: #fff;
+    }
+}
+
+/*----------------------------------
+    Todo Lists
+-----------------------------------*/
+#todo-lists {
+    .checked {
+        text-decoration: line-through;
+    }
+}
+
+/*----------------------------------
+    Calendar
+-----------------------------------*/
+.cwh-year {
+    color: rgba(255, 255, 255, 0.42);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.cwh-day {
+    font-size: 25px;
+    line-height: 100%;
+    color: #fff;
+}
+
+
+/*----------------------------------
+    Pie Grid
+-----------------------------------*/
+.pg-item {
+    padding: 20px 0;
+    
+    &:nth-child(odd) {
+        background-color: rgba(255,255,255,0.12);
+    }
+}
+
+.pgi-title {
+    margin-top: -2px;
+    line-height: 15px;
+    color: #fff;
+    font-size: 11px;
+}
+
+.dash-widget-item {
+    position: relative;
+    min-height: 380px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); 
+    
+    .dash-widget-header {
+        position: relative;
+        
+        .actions {
+            display: none;
+            position: absolute; 
+            right: 4px;
+            top: 6px;
+        }
+    }
+    
+    .dash-widget-footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .dash-widget-title {
+        padding: 12px 20px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        font-weight: 300; 
+    }
+    
+    &:hover {
+        .dash-widget-header .actions {
+            display: block;
+        }
+    }
+}
+
+
+/*----------------------------------
+    Weather
+-----------------------------------*/
+#c-weather {
+    & > p {
+        padding: 30px;
+        color: #fff;
+    }
+}
+
+.cw-current {
+    color: #fff;
+    padding: 20px 35px;
+}
+
+.cwc-info {
+    padding: 16px 0 0 20px;
+}
+
+.cwci-info, .cw-upcoming ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    & > li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.cw-upcoming {
+    padding: 0;
+    
+    ul {
+        padding: 9px 30px;
+        color: #fff;
+        
+        &:nth-child(odd) {
+            background-color: rgba(255,255,255,0.15);
+        }
+    }
+}
+
+.cwu-forecast {
+    color: #fff;
+    font-weight: 700;
+    padding: 5px;
+    float: right;
+    margin-top: 6px;
+}
+
+.cwci-temp {
+    font-size: 30px;
+    line-height: 100%;
+}
+
+/* Weather Icons */
+.cwc-icon  {
+    text-align: center;
+    .bg-option();
+    
+    &:not(.cwci-sm) {
+        height: 80px;
+        width: 80px;
+        background-size: 80px;
+    }
+    
+    &.cwci-sm {
+        height: 35px;
+        width: 35px;
+        background-size: 35px;
+        display: inline-block;
+    }
+}
+
+.cwci-item(@icon) {
+    .img-retina('../img/icons/weather/@{icon}.png', '../img/icons/weather/@{icon}@2x.png', 125px, 125px);
+}
+
+.cwci-0 { .cwci-item(0); }
+.cwci-1 { .cwci-item(1); }
+.cwci-2 { .cwci-item(2); }
+.cwci-3 { .cwci-item(3); }
+.cwci-4 { .cwci-item(2); }
+.cwci-5 { .cwci-item(5); }
+.cwci-6 { .cwci-item(5); }
+.cwci-7 { .cwci-item(5); }
+.cwci-8 { .cwci-item(5); }
+.cwci-9 { .cwci-item(9); }
+.cwci-10 { .cwci-item(5); }
+.cwci-11 { .cwci-item(9); }
+.cwci-12 { .cwci-item(9); }
+.cwci-13 { .cwci-item(9); }
+.cwci-14 { .cwci-item(9); }
+.cwci-15 { .cwci-item(5); }
+.cwci-16 { .cwci-item(9); }
+.cwci-17 { .cwci-item(5); }
+.cwci-18 { .cwci-item(18); }
+.cwci-19 { .cwci-item(19); }
+.cwci-20 { .cwci-item(19); }
+.cwci-21 { .cwci-item(19); }
+.cwci-22 { .cwci-item(19); }
+.cwci-23 { .cwci-item(19); }
+.cwci-24 { .cwci-item(24); }
+.cwci-25 { .cwci-item(24); }
+.cwci-26 { .cwci-item(26); }
+.cwci-27 { .cwci-item(27); }
+.cwci-28 { .cwci-item(28); }
+.cwci-29 { .cwci-item(27); }
+.cwci-30 { .cwci-item(28); }
+.cwci-31 { .cwci-item(31); }
+.cwci-32 { .cwci-item(32); }
+.cwci-33 { .cwci-item(31); }
+.cwci-34 { .cwci-item(32); }
+.cwci-35 { .cwci-item(5); }
+.cwci-36 { .cwci-item(32); }
+.cwci-37 { .cwci-item(2); }
+.cwci-38 { .cwci-item(2); }
+.cwci-39 { .cwci-item(2); }
+.cwci-40 { .cwci-item(5); }
+.cwci-41 { .cwci-item(5); }
+.cwci-42 { .cwci-item(9); }
+.cwci-43 { .cwci-item(5); }
+.cwci-44 { .cwci-item(27); }
+.cwci-45 { .cwci-item(2); }
+.cwci-46 { .cwci-item(18); }
+.cwci-47 { .cwci-item(2); }
+
+
+
+/*----------------------------------
+    Profile
+-----------------------------------*/
+.profile-view {
+    color: #fff;
+
+    .list-group-item {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+.pv-header {
+    background-color: rgba(255,255,255,0.1);
+    text-align: center;
+    padding: 30px 30px 25px;
+    
+    h2 {
+        color: #fff;
+        margin: 10px 0 0px;
+        font-size: 20px;
+        line-height: 100%;
+    }
+}
+
+.pv-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #2196F3;
+}
+
+.pvb-list {
+    margin: 0;
+    padding: 30px;
+}
+
+.pvb-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+/*----------------------------------
+    Picture Grid
+-----------------------------------*/
+.picture-list {
+    .pl-body {
+        padding: 2px;
+        
+        [class*="col-"] {
+            padding: 0;
+            padding: 2px;
+            
+            & > a {
+                display: block;
+
+                img { 
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+
+
+/*----------------------------------
+    Rating
+-----------------------------------*/
+.rating-list {
+    padding: 0 0 20px;
+    
+    .rl-star {
+        margin-top: 10px;
+        margin-bottom: 4px;
+        
+        .zmdi {
+            font-size: 20px;
+            
+            &:not(.active) {
+                color: #ccc;
+            }
+            
+            &.active {
+                color: @m-orange;
+            }
+        }
+    }
+
+    .media {
+        .zmdi-star {
+            line-height: 100%;
+            font-size: 22px;
+            color: #FF9800;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            left: 6px;
+        }
+
+        .media-body {
+            padding: 7px 10px 0 5px;
+        }
+    }
+}

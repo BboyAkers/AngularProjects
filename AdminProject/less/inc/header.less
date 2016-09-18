@@ -1,0 +1,328 @@
+#header {
+    .user-select(none);
+
+    position: relative;
+    padding: 40px 45px;
+    margin-bottom: 20px;
+    z-index: 10;
+    
+    @media (max-width: @screen-xs-max) {
+        padding: 15px 25px;    
+    }
+}
+
+
+/*----------------------------------
+    Logo
+-----------------------------------*/
+.h-logo {
+    @media (min-width: @screen-xs-max) {
+        width: 223px;
+    }
+    
+    a {
+        color: #fff;
+        font-weight: 700;
+        font-size: 23px;
+        display: inline-block;
+        
+        small {
+            display: block;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            margin-top: -3px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    
+    .menu-collapse {
+        @media (min-width: @screen-mobile-min) {
+            display: none;
+        }
+        
+        @media (max-width: @screen-mobile-max) {
+            margin-top: 8px;
+            float: left;
+        }
+    }
+}
+
+
+/*----------------------------------
+    Hedaer Search
+-----------------------------------*/
+.h-search {
+    padding: 2px 30px 2px 0;
+}
+
+.h-search,
+.hs-input,
+.hs-reset:before,
+.hs-reset:after {
+    .transition(all);
+    .transition-duration(300ms);
+}
+
+.hs-input {
+    border: 0;
+    height: 50px;
+    padding: 10px 20px 10px 50px;
+    border-radius: 2px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 15px;
+
+    .placeholder(#fff);
+    
+    &.ie9-placeholder {
+        color: #fff !important;
+    }
+}
+
+.focused .hs-input {
+    background-color: #fff;
+    color: @text-color;
+   
+    & + .hs-reset {
+        color: @text-color;
+    
+        &:before {
+            .scale-rotate(0, 180deg);
+        }
+        
+        &:after {
+            .scale-rotate(1, 0deg);
+        }
+    }
+    
+    .placeholder(lighten(@text-color, 5%));
+}
+
+.hs-reset {
+    left: 0;
+    font-size: 20px;
+    color: #fff;
+    top: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 100%;
+    
+    &:hover {
+        opacity: 0.7;
+    }
+    
+    &:before,
+    &:after {
+        position: absolute;
+        left: 20px;
+        top: 16px;
+    }
+    
+    &:after {
+        content: '\f2ff';
+        .scale-rotate(0, -180deg);
+        color: @text-color;
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    /* Search trigger icon for mobile */
+    .hm-search-trigger {
+        display: none !important;
+    }
+    
+}
+
+@media (max-width: @screen-sm-max) {
+    /* Header Search */
+    .h-search {
+        padding: 40px 40px 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: @m-teal;
+        z-index: 1;
+        opacity: 0;
+        .translate3d(0, -65px, 0);
+        
+        &.toggled {
+            opacity: 1;
+            .translate3d(0, 0, 0);
+        } 
+    }
+    
+    .hs-input {
+        background-color: #fff;
+        color: @text-muted;
+        
+        .placeholder(#ccc);
+    }
+    
+    .hs-reset:after {
+        .scale-rotate(1, 0deg);
+        opacity: 1;
+    }
+    
+    /* Header Search for IE9 */
+    .ie9 .h-search {
+        display: none;
+        
+        &.toggled {
+            display: block;
+        }
+    }
+    
+    /* Search trigger icon for mobile */
+    .hm-search-trigger  {
+        display: inline-block; 
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    /* Header Search */
+    .h-search {
+        padding: 30px 15px 0;
+    }
+}
+    
+
+/*----------------------------------
+    Hedaer menu
+-----------------------------------*/
+.h-menu {
+    list-style: none;
+    padding: 0;
+    
+    & > li { 
+        display: inline-block;
+        margin-top: 10px;
+        vertical-align: top;
+        min-width: 50px;
+        
+        & > a {
+            color: #fff;
+            display: block;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+    }
+}
+
+.hm-icon {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.hm-label {
+    line-height: 35px;
+    white-space: nowrap;
+    padding: 0 10px;
+    font-size: @font-size-base + 1;
+    text-transform: uppercase; 
+} 
+
+.hmn-counts {
+    position: absolute;
+    font-style: normal;
+    background: @m-red;
+    padding: 1px 5px;
+    border-radius: 2px;
+    right: 7px;
+    top: -3px;
+    font-size: 10px; 
+    line-height: 15px;
+}
+
+.hm-profile {
+    & > a {
+        margin: -5px 0 0 5px;
+        
+        img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+.hm-alerts {
+    @media(min-width: @screen-mobile-min) {
+        display: none !important; 
+    }
+}
+
+
+/*----------------------------------
+    Header Apps Menu
+-----------------------------------*/
+.h-apps {
+    .dropdown-menu {
+            width: 305px;
+            padding: 25px 10px 15px;
+        
+        & > li {
+            display: inline-block;
+            width: 95px;
+            margin-right: -4px;
+            margin-bottom: 5px;
+            
+            & > a {
+                display: block;
+                text-align: center;
+                
+                
+                & > small,
+                & > i {
+                    .transition(all);
+                    .transition-duration(500ms);
+                }
+                
+                & > i {
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 52px;
+                    border-radius: 50%;
+                    font-size: 22px;
+                    color: #fff;
+                }
+                
+                & > small {
+                    display: block;
+                    text-align: center;
+                    color: #ABABAB;
+                    margin-top: 5px;
+                }
+                
+                &:hover {
+                    background: transparent;
+                    
+                    & > small {
+                        color: #333;
+                    }
+                    
+                    & > i {
+                        .rotate(-360deg);
+                    }
+                }
+            }
+        }
+    }   
+}
+
+
+/*----------------------------------
+    Fullscreen
+-----------------------------------*/
+:-webkit-full-screen [data-action="fullscreen"] { display: none; }
+:-moz-full-screen [data-action="fullscreen"] { display: none; }
+:-ms-fullscreen [data-action="fullscreen"] { display: none; }
+:full-screen [data-action="fullscreen"] { display: none; }
+:fullscreen [data-action="fullscreen"] { display: none; }
+

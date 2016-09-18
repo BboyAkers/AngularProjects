@@ -1,0 +1,32 @@
+.four-zero {
+	background-color: @palette-Blue-Grey-500;
+	height: 100vh;
+	text-align: center;
+
+	&:before {
+		content: '';
+		width: 1px;
+		height: 100vh;
+	}
+}
+
+.four-zero:before,
+.fz-inner {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fz-inner {
+	max-width: 500px;
+	padding: 50px;
+	background-color: @palette-Blue-Grey-600;
+	border-radius: 3px;
+	color: #fff;
+	width: 90%;
+
+	h2 {
+		color: #fff;
+		margin: 0;
+		font-size: 100px;
+	}
+}
