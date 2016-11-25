@@ -7,9 +7,11 @@ import { GithubService } from '../services/github.service';
   templateUrl: `profile.component.html`
 })
 export class ProfileComponent  {
+  user: any[];
+
   constructor(private _githubService: GithubService){
     this._githubService.getUser().subscribe(user => {
-      console.log(user);
+      this.user = user;
     })
   }
 }
