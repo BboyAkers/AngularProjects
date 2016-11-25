@@ -28,4 +28,8 @@ export class GithubService {
       + this.client_id +'&client_secret='
       + this.client_secret).map(res => res.json());
   }
+
+  updateUser(username:string) {
+    this.username = username;
+  }
 }
