@@ -3,11 +3,11 @@ import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-
+//generate and input your client id and secret from https://github.com/settings/developers
 export class GithubService {
   private username: string;
-  private client_id: '317661744fd1938c046f';
-  private client_secret = '6bc0da4d54776ab09c8d4d2398e6aaf581152e06';
+  private client_id: '';
+  private client_secret = '';
 
 
   constructor(private _http: Http){
