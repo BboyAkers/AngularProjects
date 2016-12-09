@@ -1,6 +1,0 @@
-[submodule "quickstart"]
-	path = quickstart
-	url = https://github.com/angular/quickstart.git
-[submodule "ng2-SpotifyApp"]
-	path = ng2-SpotifyApp
-	url = https://github.com/angular/quickstart.git
