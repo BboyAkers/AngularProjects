@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $('body').on('click', '[data-ma-action]', function (e) {
         e.preventDefault();
