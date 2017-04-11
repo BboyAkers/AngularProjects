@@ -2,10 +2,14 @@
 
     angular.module('templateStore')
 
-        .controller('StoreController', StoreController);
+        .controller('StoreController', ['$scope', 'templateService', StoreController]);
 
-    function StoreController() {
+    function StoreController($scope, templateService) {
         vm = this;
+
+        templateService.getInfo().then(function (obj) {
+            $scope.id
+        })
 
 
     }
