@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myDash" class="no-js"><!--<![endif]-->
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<div class="mdl-layout__container has-scrolling-header">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" name="sample"
+                               id="fixed-header-drawer-exp">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Dashboard</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" ui-sref="home">Home</a>
+                <a class="mdl-navigation__link" ui-sref="portfolio">Portfolio</a>
+                <a class="mdl-navigation__link" ui-sref="invoicing">Invoicing</a>
+                <a class="mdl-navigation__link" ui-sref="email">Email</a>
+                <a class="mdl-navigation__link" ui-sref="news">News</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-layout__container" ui-view>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<!--<div>Angular seed app: v<span app-version></span></div>-->
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+
+<!--Dependencies-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/material-design-lite/material.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+
+
+<!--<script src="app.js"></script>-->
+<script src="appDist.js"></script>
+
+
+<!--Services-->
+<!--<script src="services/weatherService.js"></script>-->
+<!--<script src="services/githubService.js"></script>-->
+<!--<script src="services/treehouseService.js"></script>-->
+
+<!--Controllers-->
+<!--<script src="views/home/homeController.js"></script>-->
+<!--<script src="views/portfolio/portfolioController.js"></script>-->
+<!--<script src="views/invoicing/invoiceController.js"></script>-->
+<!--<script src="views/email/emailController.js"></script>-->
+<!--<script src="views/news/newsController.js"></script>-->
+
+
+</body>
+</html>

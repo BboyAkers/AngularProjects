@@ -1,0 +1,798 @@
+{
+  "name": "Austin Akers",
+  "profile_name": "austinakers",
+  "profile_url": "https://teamtreehouse.com/austinakers",
+  "gravatar_url": "https://uploads.teamtreehouse.com/production/profile-photos/7070582/avatar_IMG_987_500x500.jpg",
+  "gravatar_hash": "3795f405cf8513d76c43f491af064db3",
+  "badges": [
+    {
+      "id": 49,
+      "name": "Newbie",
+      "url": "https://teamtreehouse.com/austinakers",
+      "icon_url": "https://achievement-images.teamtreehouse.com/Generic_Newbie.png",
+      "earned_date": "2016-10-16T03:45:30.000Z",
+      "courses": []
+    },
+    {
+      "id": 2122,
+      "name": "Introducing JavaScript",
+      "url": "https://teamtreehouse.com/library/javascript-basics/introducing-javascript",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_Basics_Stage1.png",
+      "earned_date": "2016-10-16T05:20:33.000Z",
+      "courses": [
+        {
+          "title": "JavaScript Basics",
+          "url": "https://teamtreehouse.com/library/javascript-basics",
+          "badge_count": 1
+        },
+        {
+          "title": "Introducing JavaScript",
+          "url": "https://teamtreehouse.com/library/javascript-basics/introducing-javascript",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 2132,
+      "name": "JavaScript Variables",
+      "url": "https://teamtreehouse.com/library/javascript-basics/storing-and-tracking-information-with-variables",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_Basics_Stage2.png",
+      "earned_date": "2016-10-16T06:59:30.000Z",
+      "courses": [
+        {
+          "title": "JavaScript Basics",
+          "url": "https://teamtreehouse.com/library/javascript-basics",
+          "badge_count": 1
+        },
+        {
+          "title": "Storing and Tracking Information with Variables",
+          "url": "https://teamtreehouse.com/library/javascript-basics/storing-and-tracking-information-with-variables",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 3182,
+      "name": "JavaScript Numbers",
+      "url": "https://teamtreehouse.com/library/javascript-basics/working-with-numbers",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_Basics_Stage0-34.png",
+      "earned_date": "2016-10-18T05:44:50.000Z",
+      "courses": [
+        {
+          "title": "JavaScript Basics",
+          "url": "https://teamtreehouse.com/library/javascript-basics",
+          "badge_count": 1
+        },
+        {
+          "title": "Working With Numbers",
+          "url": "https://teamtreehouse.com/library/javascript-basics/working-with-numbers",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 2142,
+      "name": "JavaScript Conditional Statements",
+      "url": "https://teamtreehouse.com/library/javascript-basics/making-decisions-with-conditional-statements",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_Basics_Stage3.png",
+      "earned_date": "2016-10-22T20:27:02.000Z",
+      "courses": [
+        {
+          "title": "JavaScript Basics",
+          "url": "https://teamtreehouse.com/library/javascript-basics",
+          "badge_count": 1
+        },
+        {
+          "title": "Making Decisions with Conditional Statements",
+          "url": "https://teamtreehouse.com/library/javascript-basics/making-decisions-with-conditional-statements",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 2152,
+      "name": "JavaScript Functions",
+      "url": "https://teamtreehouse.com/library/javascript-basics/creating-reusable-code-with-functions",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_Basics_Stage4B.png",
+      "earned_date": "2016-11-08T07:16:18.000Z",
+      "courses": [
+        {
+          "title": "JavaScript Basics",
+          "url": "https://teamtreehouse.com/library/javascript-basics",
+          "badge_count": 1
+        },
+        {
+          "title": "Creating Reusable Code with Functions",
+          "url": "https://teamtreehouse.com/library/javascript-basics/creating-reusable-code-with-functions",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 2942,
+      "name": "How WordPress Templates Work",
+      "url": "https://teamtreehouse.com/library/the-wordpress-template-hierarchy/how-wordpress-templates-work",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_WP_Templates_Stage1.png",
+      "earned_date": "2016-11-09T23:57:07.000Z",
+      "courses": [
+        {
+          "title": "The WordPress Template Hierarchy ",
+          "url": "https://teamtreehouse.com/library/the-wordpress-template-hierarchy",
+          "badge_count": 1
+        },
+        {
+          "title": "How WordPress Templates Work",
+          "url": "https://teamtreehouse.com/library/the-wordpress-template-hierarchy/how-wordpress-templates-work",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 2222,
+      "name": "JavaScript Loops",
+      "url": "https://teamtreehouse.com/library/javascript-loops-arrays-and-objects/simplify-repetitive-tasks-with-loops",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_Basics_Stage6.png",
+      "earned_date": "2016-11-11T07:27:00.000Z",
+      "courses": [
+        {
+          "title": "JavaScript Loops, Arrays and Objects",
+          "url": "https://teamtreehouse.com/library/javascript-loops-arrays-and-objects",
+          "badge_count": 1
+        },
+        {
+          "title": "Simplify Repetitive Tasks with Loops",
+          "url": "https://teamtreehouse.com/library/javascript-loops-arrays-and-objects/simplify-repetitive-tasks-with-loops",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 2162,
+      "name": "JavaScript Arrays",
+      "url": "https://teamtreehouse.com/library/javascript-loops-arrays-and-objects/tracking-multiple-items-with-arrays",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_Basics_Stage5.png",
+      "earned_date": "2016-11-20T04:09:22.000Z",
+      "courses": [
+        {
+          "title": "JavaScript Loops, Arrays and Objects",
+          "url": "https://teamtreehouse.com/library/javascript-loops-arrays-and-objects",
+          "badge_count": 1
+        },
+        {
+          "title": "Tracking Multiple Items with Arrays ",
+          "url": "https://teamtreehouse.com/library/javascript-loops-arrays-and-objects/tracking-multiple-items-with-arrays",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 4602,
+      "name": "JavaScript Objects",
+      "url": "https://teamtreehouse.com/library/javascript-loops-arrays-and-objects/tracking-data-using-objects",
+      "icon_url": "https://achievement-images.teamtreehouse.com/javascript-loops-stage3.png",
+      "earned_date": "2016-11-25T21:36:26.000Z",
+      "courses": [
+        {
+          "title": "JavaScript Loops, Arrays and Objects",
+          "url": "https://teamtreehouse.com/library/javascript-loops-arrays-and-objects",
+          "badge_count": 1
+        },
+        {
+          "title": "Tracking Data Using Objects",
+          "url": "https://teamtreehouse.com/library/javascript-loops-arrays-and-objects/tracking-data-using-objects",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 8102,
+      "name": "Getting Started with Angular",
+      "url": "https://teamtreehouse.com/library/angularjs-3/getting-started-with-angular",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges-js-angularbasics-stage1.png",
+      "earned_date": "2016-12-05T02:42:35.000Z",
+      "courses": [
+        {
+          "title": "AngularJS",
+          "url": "https://teamtreehouse.com/library/angularjs-3",
+          "badge_count": 1
+        },
+        {
+          "title": "Getting Started with Angular ",
+          "url": "https://teamtreehouse.com/library/angularjs-3/getting-started-with-angular",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 11332,
+      "name": "The Browser Environment",
+      "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2/the-browser-environment",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_DOM_Stage-41.png",
+      "earned_date": "2016-12-20T06:03:39.000Z",
+      "courses": [
+        {
+          "title": "JavaScript and the DOM",
+          "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2",
+          "badge_count": 1
+        },
+        {
+          "title": "The Browser Environment",
+          "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2/the-browser-environment",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 11342,
+      "name": "Getting a Handle on the DOM",
+      "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2/getting-a-handle-on-the-dom",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_DOM_Stage-42.png",
+      "earned_date": "2016-12-23T15:58:17.000Z",
+      "courses": [
+        {
+          "title": "JavaScript and the DOM",
+          "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2",
+          "badge_count": 1
+        },
+        {
+          "title": "Getting a Handle on the DOM",
+          "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2/getting-a-handle-on-the-dom",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 11352,
+      "name": "Making Changes to the DOM",
+      "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2/making-changes-to-the-dom",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_DOM_Stage-43.png",
+      "earned_date": "2016-12-27T05:02:11.000Z",
+      "courses": [
+        {
+          "title": "JavaScript and the DOM",
+          "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2",
+          "badge_count": 1
+        },
+        {
+          "title": "Making Changes to the DOM",
+          "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2/making-changes-to-the-dom",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 11362,
+      "name": "Responding to User Interaction",
+      "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2/responding-to-user-interaction",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_DOM_Stage-44.png",
+      "earned_date": "2016-12-27T18:29:48.000Z",
+      "courses": [
+        {
+          "title": "JavaScript and the DOM",
+          "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2",
+          "badge_count": 1
+        },
+        {
+          "title": "Responding to User Interaction",
+          "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2/responding-to-user-interaction",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 11372,
+      "name": "Traversing the DOM",
+      "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2/traversing-the-dom",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_DOM_Stage-45.png",
+      "earned_date": "2016-12-28T02:02:17.000Z",
+      "courses": [
+        {
+          "title": "JavaScript and the DOM",
+          "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2",
+          "badge_count": 1
+        },
+        {
+          "title": "Traversing the DOM",
+          "url": "https://teamtreehouse.com/library/javascript-and-the-dom-2/traversing-the-dom",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 8112,
+      "name": "Controllers and Scope",
+      "url": "https://teamtreehouse.com/library/angularjs-3/controllers-and-scope",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges-js-angularbasics-stage2.png",
+      "earned_date": "2016-12-30T17:25:39.000Z",
+      "courses": [
+        {
+          "title": "AngularJS",
+          "url": "https://teamtreehouse.com/library/angularjs-3",
+          "badge_count": 1
+        },
+        {
+          "title": "Controllers and Scope",
+          "url": "https://teamtreehouse.com/library/angularjs-3/controllers-and-scope",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 8122,
+      "name": "Using Angular's Built-in Directives",
+      "url": "https://teamtreehouse.com/library/angularjs-3/using-angulars-built-in-directives",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges-js-angularbasics-stage3.png",
+      "earned_date": "2016-12-31T07:21:59.000Z",
+      "courses": [
+        {
+          "title": "AngularJS",
+          "url": "https://teamtreehouse.com/library/angularjs-3",
+          "badge_count": 1
+        },
+        {
+          "title": "Using Angular's Built In Directives",
+          "url": "https://teamtreehouse.com/library/angularjs-3/using-angulars-built-in-directives",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 8132,
+      "name": "Services in Angular",
+      "url": "https://teamtreehouse.com/library/angularjs-3/services-in-angular",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges-js-angularbasics-stage4.png",
+      "earned_date": "2017-01-01T18:46:59.000Z",
+      "courses": [
+        {
+          "title": "AngularJS",
+          "url": "https://teamtreehouse.com/library/angularjs-3",
+          "badge_count": 1
+        },
+        {
+          "title": "Services in Angular",
+          "url": "https://teamtreehouse.com/library/angularjs-3/services-in-angular",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 8142,
+      "name": "Improving Our Todo App",
+      "url": "https://teamtreehouse.com/library/angularjs-3/improving-our-todo-app",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges-js-angularbasics-stage5.png",
+      "earned_date": "2017-01-01T21:07:34.000Z",
+      "courses": [
+        {
+          "title": "AngularJS",
+          "url": "https://teamtreehouse.com/library/angularjs-3",
+          "badge_count": 1
+        },
+        {
+          "title": "Improving Our Todo App",
+          "url": "https://teamtreehouse.com/library/angularjs-3/improving-our-todo-app",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 11112,
+      "name": "Hello, jQuery!",
+      "url": "https://teamtreehouse.com/library/introduction-to-jquery/hello-jquery",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryIntro_stage01.png",
+      "earned_date": "2017-01-02T15:06:59.000Z",
+      "courses": [
+        {
+          "title": "Introduction to jQuery",
+          "url": "https://teamtreehouse.com/library/introduction-to-jquery",
+          "badge_count": 1
+        },
+        {
+          "title": "Hello, jQuery!",
+          "url": "https://teamtreehouse.com/library/introduction-to-jquery/hello-jquery",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 11122,
+      "name": "Events",
+      "url": "https://teamtreehouse.com/library/introduction-to-jquery/events",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryIntro_stage02.png",
+      "earned_date": "2017-01-04T23:18:44.000Z",
+      "courses": [
+        {
+          "title": "Introduction to jQuery",
+          "url": "https://teamtreehouse.com/library/introduction-to-jquery",
+          "badge_count": 1
+        },
+        {
+          "title": "Events",
+          "url": "https://teamtreehouse.com/library/introduction-to-jquery/events",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 11132,
+      "name": "DOM Manipulation",
+      "url": "https://teamtreehouse.com/library/introduction-to-jquery/dom-manipulation",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryIntro_stage03.png",
+      "earned_date": "2017-01-07T01:05:08.000Z",
+      "courses": [
+        {
+          "title": "Introduction to jQuery",
+          "url": "https://teamtreehouse.com/library/introduction-to-jquery",
+          "badge_count": 1
+        },
+        {
+          "title": "DOM Manipulation",
+          "url": "https://teamtreehouse.com/library/introduction-to-jquery/dom-manipulation",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 11142,
+      "name": "DOM Traversal",
+      "url": "https://teamtreehouse.com/library/introduction-to-jquery/dom-traversal",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryIntro_stage04.png",
+      "earned_date": "2017-01-07T04:45:58.000Z",
+      "courses": [
+        {
+          "title": "Introduction to jQuery",
+          "url": "https://teamtreehouse.com/library/introduction-to-jquery",
+          "badge_count": 1
+        },
+        {
+          "title": "DOM Traversal",
+          "url": "https://teamtreehouse.com/library/introduction-to-jquery/dom-traversal",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 1622,
+      "name": "AJAX Concepts",
+      "url": "https://teamtreehouse.com/library/ajax-basics/ajax-concepts",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_AJAXBasics_Stage1.png",
+      "earned_date": "2017-01-07T06:46:01.000Z",
+      "courses": [
+        {
+          "title": "AJAX Basics",
+          "url": "https://teamtreehouse.com/library/ajax-basics",
+          "badge_count": 1
+        },
+        {
+          "title": "AJAX Concepts",
+          "url": "https://teamtreehouse.com/library/ajax-basics/ajax-concepts",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 1632,
+      "name": "Programming AJAX",
+      "url": "https://teamtreehouse.com/library/ajax-basics/programming-ajax",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_AJAXBasics_Stage2.png",
+      "earned_date": "2017-01-07T16:24:59.000Z",
+      "courses": [
+        {
+          "title": "AJAX Basics",
+          "url": "https://teamtreehouse.com/library/ajax-basics",
+          "badge_count": 1
+        },
+        {
+          "title": "Programming AJAX",
+          "url": "https://teamtreehouse.com/library/ajax-basics/programming-ajax",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 1642,
+      "name": "jQuery and AJAX",
+      "url": "https://teamtreehouse.com/library/ajax-basics/jquery-and-ajax",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_AJAXBasics_Stage3.png",
+      "earned_date": "2017-01-08T23:17:51.000Z",
+      "courses": [
+        {
+          "title": "AJAX Basics",
+          "url": "https://teamtreehouse.com/library/ajax-basics",
+          "badge_count": 1
+        },
+        {
+          "title": "jQuery and AJAX",
+          "url": "https://teamtreehouse.com/library/ajax-basics/jquery-and-ajax",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 1652,
+      "name": "AJAX and APIs",
+      "url": "https://teamtreehouse.com/library/ajax-basics/ajax-and-apis",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_AJAXBasics_Stage4.png",
+      "earned_date": "2017-01-10T07:09:42.000Z",
+      "courses": [
+        {
+          "title": "AJAX Basics",
+          "url": "https://teamtreehouse.com/library/ajax-basics",
+          "badge_count": 1
+        },
+        {
+          "title": "AJAX and APIs",
+          "url": "https://teamtreehouse.com/library/ajax-basics/ajax-and-apis",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 6322,
+      "name": "Introduction to Methods",
+      "url": "https://teamtreehouse.com/library/objectoriented-javascript/introduction-to-methods",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_javaScript_oojs_Stage1.png",
+      "earned_date": "2017-01-12T23:31:45.000Z",
+      "courses": [
+        {
+          "title": "Object-Oriented JavaScript",
+          "url": "https://teamtreehouse.com/library/objectoriented-javascript",
+          "badge_count": 1
+        },
+        {
+          "title": "Introduction to Methods",
+          "url": "https://teamtreehouse.com/library/objectoriented-javascript/introduction-to-methods",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 6332,
+      "name": "Constructor Functions \u0026 Prototypes",
+      "url": "https://teamtreehouse.com/library/objectoriented-javascript/constructor-functions-and-prototypes",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_javaScript_oojs_Stage2.png",
+      "earned_date": "2017-01-13T00:45:17.000Z",
+      "courses": [
+        {
+          "title": "Object-Oriented JavaScript",
+          "url": "https://teamtreehouse.com/library/objectoriented-javascript",
+          "badge_count": 1
+        },
+        {
+          "title": "Constructor Functions and Prototypes",
+          "url": "https://teamtreehouse.com/library/objectoriented-javascript/constructor-functions-and-prototypes",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 6362,
+      "name": "Prototypal Inheritance",
+      "url": "https://teamtreehouse.com/library/objectoriented-javascript/prototypal-inheritance",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_javaScript_oojs_Stage3.png",
+      "earned_date": "2017-01-21T01:23:45.000Z",
+      "courses": [
+        {
+          "title": "Object-Oriented JavaScript",
+          "url": "https://teamtreehouse.com/library/objectoriented-javascript",
+          "badge_count": 1
+        },
+        {
+          "title": "Prototypal Inheritance",
+          "url": "https://teamtreehouse.com/library/objectoriented-javascript/prototypal-inheritance",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 6372,
+      "name": "Quiz Practice Project",
+      "url": "https://teamtreehouse.com/library/objectoriented-javascript/practice-project",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_javaScript_oojs_Stage4.png",
+      "earned_date": "2017-01-21T20:09:06.000Z",
+      "courses": [
+        {
+          "title": "Object-Oriented JavaScript",
+          "url": "https://teamtreehouse.com/library/objectoriented-javascript",
+          "badge_count": 1
+        },
+        {
+          "title": "Practice Project",
+          "url": "https://teamtreehouse.com/library/objectoriented-javascript/practice-project",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 10722,
+      "name": "ES2015 Basics",
+      "url": "https://teamtreehouse.com/library/introducing-es2015/es2015-basics",
+      "icon_url": "https://achievement-images.teamtreehouse.com/bagdes-js-es2015-stage1.png",
+      "earned_date": "2017-01-27T06:36:17.000Z",
+      "courses": [
+        {
+          "title": "Introducing ES2015",
+          "url": "https://teamtreehouse.com/library/introducing-es2015",
+          "badge_count": 1
+        },
+        {
+          "title": "ES2015 Basics",
+          "url": "https://teamtreehouse.com/library/introducing-es2015/es2015-basics",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 12052,
+      "name": "Introduction to Node.js",
+      "url": "https://teamtreehouse.com/library/nodejs-basics-2/introduction-to-nodejs",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_nodeBasics_Stage1.png",
+      "earned_date": "2017-02-11T23:54:05.000Z",
+      "courses": [
+        {
+          "title": "Node.js Basics",
+          "url": "https://teamtreehouse.com/library/nodejs-basics-2",
+          "badge_count": 1
+        },
+        {
+          "title": "Introduction to Node.js",
+          "url": "https://teamtreehouse.com/library/nodejs-basics-2/introduction-to-nodejs",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 12062,
+      "name": "Getting Data From an API With Node",
+      "url": "https://teamtreehouse.com/library/nodejs-basics-2/building-a-command-line-application",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_nodeBasics_Stage2.png",
+      "earned_date": "2017-02-13T15:02:16.000Z",
+      "courses": [
+        {
+          "title": "Node.js Basics",
+          "url": "https://teamtreehouse.com/library/nodejs-basics-2",
+          "badge_count": 1
+        },
+        {
+          "title": "Building a Command Line Application",
+          "url": "https://teamtreehouse.com/library/nodejs-basics-2/building-a-command-line-application",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 12072,
+      "name": "Handling Errors in Node",
+      "url": "https://teamtreehouse.com/library/nodejs-basics-2/handling-errors-in-node",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_nodeBasics_Stage3.png",
+      "earned_date": "2017-02-16T14:40:43.000Z",
+      "courses": [
+        {
+          "title": "Node.js Basics",
+          "url": "https://teamtreehouse.com/library/nodejs-basics-2",
+          "badge_count": 1
+        },
+        {
+          "title": "Handling Errors in Node",
+          "url": "https://teamtreehouse.com/library/nodejs-basics-2/handling-errors-in-node",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 12082,
+      "name": "Creating a Command Line Weather Application",
+      "url": "https://teamtreehouse.com/library/nodejs-basics-2/create-a-command-line-weather-application",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_nodeBasics_Stage4.png",
+      "earned_date": "2017-02-16T15:02:34.000Z",
+      "courses": [
+        {
+          "title": "Node.js Basics",
+          "url": "https://teamtreehouse.com/library/nodejs-basics-2",
+          "badge_count": 1
+        },
+        {
+          "title": "Create a Command Line Weather Application",
+          "url": "https://teamtreehouse.com/library/nodejs-basics-2/create-a-command-line-weather-application",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 10732,
+      "name": "The Cooler Parts of ES2015",
+      "url": "https://teamtreehouse.com/library/introducing-es2015/the-cooler-parts-of-es2015",
+      "icon_url": "https://achievement-images.teamtreehouse.com/bagdes-js-es2015-stage2.png",
+      "earned_date": "2017-02-17T15:54:26.000Z",
+      "courses": [
+        {
+          "title": "Introducing ES2015",
+          "url": "https://teamtreehouse.com/library/introducing-es2015",
+          "badge_count": 1
+        },
+        {
+          "title": "The Cooler Parts of ES2015",
+          "url": "https://teamtreehouse.com/library/introducing-es2015/the-cooler-parts-of-es2015",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 10742,
+      "name": "Objects and New Collection Types",
+      "url": "https://teamtreehouse.com/library/introducing-es2015/objects-and-new-collection-types",
+      "icon_url": "https://achievement-images.teamtreehouse.com/bagdes-js-es2015-stage3.png",
+      "earned_date": "2017-02-20T14:46:09.000Z",
+      "courses": [
+        {
+          "title": "Introducing ES2015",
+          "url": "https://teamtreehouse.com/library/introducing-es2015",
+          "badge_count": 1
+        },
+        {
+          "title": "Objects and New Collection Types",
+          "url": "https://teamtreehouse.com/library/introducing-es2015/objects-and-new-collection-types",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 10752,
+      "name": "Classes",
+      "url": "https://teamtreehouse.com/library/introducing-es2015/classes",
+      "icon_url": "https://achievement-images.teamtreehouse.com/bagdes-js-es2015-stage4.png",
+      "earned_date": "2017-02-21T15:19:16.000Z",
+      "courses": [
+        {
+          "title": "Introducing ES2015",
+          "url": "https://teamtreehouse.com/library/introducing-es2015",
+          "badge_count": 1
+        },
+        {
+          "title": "Classes",
+          "url": "https://teamtreehouse.com/library/introducing-es2015/classes",
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "id": 5742,
+      "name": "Creating a Simple Server in Node.js",
+      "url": "https://teamtreehouse.com/library/build-a-simple-dynamic-site-with-nodejs/creating-a-simple-server-in-nodejs",
+      "icon_url": "https://achievement-images.teamtreehouse.com/badges_JavaScript_nodesite_Stage1.png",
+      "earned_date": "2017-02-23T15:09:13.000Z",
+      "courses": [
+        {
+          "title": "Build a Simple Dynamic Site with Node.js",
+          "url": "https://teamtreehouse.com/library/build-a-simple-dynamic-site-with-nodejs",
+          "badge_count": 1
+        },
+        {
+          "title": "Creating a Simple Server in Node.js",
+          "url": "https://teamtreehouse.com/library/build-a-simple-dynamic-site-with-nodejs/creating-a-simple-server-in-nodejs",
+          "badge_count": 1
+        }
+      ]
+    }
+  ],
+  "points": {
+    "total": 3656,
+    "HTML": 9,
+    "CSS": 0,
+    "Design": 0,
+    "JavaScript": 3497,
+    "Ruby": 0,
+    "PHP": 1,
+    "WordPress": 44,
+    "iOS": 0,
+    "Android": 0,
+    "Development Tools": 0,
+    "Business": 0,
+    "Python": 0,
+    "Java": 0,
+    "Digital Literacy": 0,
+    "Game Development": 0,
+    "C#": 0,
+    "Databases": 0,
+    "Virtual Reality": 0
+  }
+}

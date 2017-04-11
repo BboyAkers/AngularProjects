@@ -1,0 +1,20 @@
+.portfolio-container {
+  display: flex; }
+  .portfolio-container div {
+    flex: 1;
+    justify-content: space-around;
+    width: 35%; }
+
+.weather-list-three {
+  height: 400px;
+  overflow-y: scroll; }
+
+.repoSection {
+  height: 400px;
+  overflow-y: scroll; }
+
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=home.css.map */

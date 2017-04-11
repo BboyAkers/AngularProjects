@@ -1,0 +1,50 @@
+<!--<div class="mdl-card">-->
+<!--<p>{{home.name}}</p>-->
+<!--</div>-->
+<div class="container">
+    <div class="row" style="margin-top: 10px">
+        <div class="col-md-3">
+            <div class="mdl-card__media">
+                <img ng-src="{{githubAvatar}}" width="250" height="250" border="0" alt="" style="padding:20px;">
+            </div>
+                <!--<img ng-src="{{githubAvatar}}" width="250" height="250">-->
+        </div>
+        <div class="col-md-4 col-md-offset-1" style="border: 1px solid black">
+            <div>
+                <h1 class="text-center">Austin Akers</h1>
+            </div>
+            <div class="pull-left">
+                <a target="_blank" href="https  ://github.com/bboyakers">
+                    <img src="assets/images/Github.png" height="100px">
+                </a>
+                <h3>Github</h3>
+            </div>
+
+            <div class="pull-left">
+                <a target="_blank" href="https://www.linkedin.com/in/austin-akers-b1966765/">
+                    <img src="assets/images/Linkedin.png" height="100px">
+                </a>
+                <h3>LinkedIn</h3>
+            </div>
+
+        </div>
+        <div class="col-md-3 text-center">
+            <h3>Today's Weather</h3>
+            <img class="center" src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100">
+            <h4>Temperature {{weatherObj.temp}}</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-6 repoSection">
+            <h2>Github Repository</h2>
+            <div ng-repeat="repos in githubRepo">
+                <h4>{{repos.name}}</h4>
+                <p>{{repos.description}}</p>
+                <p>{{repos.language}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.portfolio-container {
+  display: flex;
+  div {
+    flex: 1;
+    justify-content: space-around;
+    width: 35%;
+  }
+}
+.weather-list-three{
+  height: 400px;
+  overflow-y: scroll;
+}
+.repoSection {
+  height: 400px;
+  overflow-y: scroll;
+}
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: url('../assets/demos/image_card.jpg') center / cover;
+}
+.profile-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.profile-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
