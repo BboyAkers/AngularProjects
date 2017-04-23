@@ -29,18 +29,20 @@
         <div class="col-md-3 text-center">
             <h3>Today's Weather</h3>
             <img class="center" src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100">
-            <h4>Temperature {{weatherObj.temp}}</h4>
+            <h4>Temperature {{main}}</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
     </div>
     <div class="row">
 
-        <div class="col-md-6 repoSection">
+        <div class="col-md-6">
             <h2>Github Repository</h2>
-            <div ng-repeat="repos in githubRepo">
-                <h4>{{repos.name}}</h4>
-                <p>{{repos.description}}</p>
-                <p>{{repos.language}}</p>
+            <div class="repoSection">
+                <div ng-repeat="repos in githubRepo">
+                    <h4>{{repos.name}}</h4>
+                    <p>{{repos.description}}</p>
+                    <p>{{repos.language}}</p>
+                </div>
             </div>
         </div>
 

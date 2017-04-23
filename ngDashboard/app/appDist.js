@@ -107,6 +107,7 @@ function weatherService($http) {
 
                 if (typeof data === "string") {
                     data = JSON.parse(data);
+                    console.log(data);
                 }
                 data = {weather: data};
                 return data;
@@ -207,6 +208,7 @@ function HomeController($scope, githubService, weatherService) {
         var vm = this;
 
     }
+
 
     PortfolioController.$inject = [];
 
