@@ -107,7 +107,6 @@ function weatherService($http) {
 
                 if (typeof data === "string") {
                     data = JSON.parse(data);
-                    console.log(data);
                 }
                 data = {weather: data};
                 return data;
@@ -130,7 +129,7 @@ function weatherService($http) {
 }
 
 
-
+(function() {
     'use strict';
     angular.module('myDash')
         .controller('HomeController', ['$scope', 'githubService', 'weatherService', HomeController]);
@@ -172,6 +171,9 @@ function HomeController($scope, githubService, weatherService) {
 
 
 }
+     HomeController.$inject = [];
+
+}());
 (function(){
     'use strict';
     angular.module('myDash')
@@ -188,6 +190,7 @@ function HomeController($scope, githubService, weatherService) {
 (function() {
     'use strict';
     angular.module('myDash')
+    
         .controller('NewsController', NewsController);
 
     function NewsController() {

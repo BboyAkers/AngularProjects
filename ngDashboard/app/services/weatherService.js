@@ -15,7 +15,7 @@ function weatherService($http) {
             params: {
                 mode: 'json',
                 units: 'imperial',
-                appid: 'API_KEY'
+                appid: 'f524e1aeeaeba7e6399719841c3ab164'
             }
         })
             .then(function (response) {

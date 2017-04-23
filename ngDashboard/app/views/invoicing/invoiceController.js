@@ -1,4 +1,4 @@
-(function() {
+(function(){
     'use strict';
     angular.module('myDash')
 
@@ -8,5 +8,6 @@
         var vm = this;
 
     }
+    InvoiceController.$inject = [];
 
 }());

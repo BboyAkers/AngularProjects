@@ -1,4 +1,4 @@
-
+(function() {
     'use strict';
     angular.module('myDash')
         .controller('HomeController', ['$scope', 'githubService', 'weatherService', HomeController]);
@@ -40,3 +40,6 @@ function HomeController($scope, githubService, weatherService) {
 
 
 }
+     HomeController.$inject = [];
+
+}());
