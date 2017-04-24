@@ -14,7 +14,8 @@ body {
 
 .repoSection {
   height: 400px;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  padding-left: 15px; }
 
 img.center {
   display: block;
