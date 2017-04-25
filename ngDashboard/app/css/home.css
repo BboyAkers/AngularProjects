@@ -15,7 +15,20 @@ body {
 .repoSection {
   height: 400px;
   overflow-y: scroll;
-  padding-left: 15px; }
+  background-color: #3f51b5
+  /*margin-left: 15px; */
+  }
+
+.repo-card {
+  height: 125px;
+  width: 500px;
+}
+
+.repo-heading {
+    margin-bottom: 1px;
+    border-bottom: 2px solid rgba(78, 78, 78, 0.27);
+    padding-bottom: 10px;
+}
 
 img.center {
   display: block;

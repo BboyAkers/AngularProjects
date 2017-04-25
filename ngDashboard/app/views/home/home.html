@@ -3,13 +3,13 @@
 <!--</div>-->
 <div class="container">
     <div class="row" style="margin-top: 10px">
-        <div class="col-md-3 col-xs-10 col-xs-offset-1">
+        <div class="col-md-3">
             <div class="ng-card ng-depth-4">
                 <img ng-src="{{githubAvatar}}" width="250" height="250" border="0" alt="" style="padding:10px;">
                 <!--<img ng-src="{{githubAvatar}}" width="250" height="250">-->
             </div>
         </div>
-        <div class="col-md-4 col-md-offset-1">
+        <div class="col-md-4">
             <div class="ng-card ng-depth-2" style="width: 100%">
                 <h1 class="text-center">Austin Akers</h1>
                 <div class="col-md-4 col-md-offset-2">
@@ -39,9 +39,9 @@
 
         <div class="col-md-6">
             <div class="ng-card ng-depth-2 ng-width">
-                <h2 class="ng-heading">Github Repository</h2>   
+                <h2 class="ng-heading repo-heading">Github Repository</h2>   
                 <div class="repoSection">
-                    <div ng-repeat="repos in githubRepo" class="ng-card ng-depth-2">
+                    <div ng-repeat="repos in githubRepo" class="ng-card ng-depth-4 repo-card">
                         <h4>{{repos.name}}</h4>
                         <p>{{repos.description}}</p>
                         <p>{{repos.language}}</p>
