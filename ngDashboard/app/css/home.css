@@ -9,11 +9,11 @@ body {
     width: 35%; }
 
 .weather-list-three {
-  height: 400px;
+  height: 425px;
   overflow-y: scroll; }
 
 .repoSection {
-  height: 400px;
+  height: 450px;
   overflow-y: scroll;
   background-color: rgba(226, 225, 224, 0.12);
   /*margin-left: 15px; */
