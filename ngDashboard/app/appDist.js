@@ -63,6 +63,7 @@ function githubService($http) {
                     data = JSON.parse(data);
                 }
                 data = {repos: data};
+                console.log(data);
                 return data;
             });
     };
@@ -109,18 +110,20 @@ function weatherService($http) {
                     data = JSON.parse(data);
                 }
                 data = {weather: data};
+                console.log(data)
                 return data;
             });
     };
 
-    this.getMainObj = function () {
+    this.getWeatherTemp = function () {
         return this.getWeather().then(function (data) {
-            return data.weather;
+            return data.main.temp;
         });
     };
-    this.getWeatherObj = function () {
+    
+    this.getWeatherDescription = function () {
         return this.getWeather().then(function (data) {
-            return data.main;
+            return data.weather[0].description;
         });
     };
 
@@ -165,9 +168,6 @@ function HomeController($scope, githubService, weatherService) {
     //
     //     });
     // };
-
-    // vm.treehouseService = treehouseService.treehouseObj;
-    // console.log(treehouseService);
 
 
 }

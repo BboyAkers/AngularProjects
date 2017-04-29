@@ -15,28 +15,10 @@ function HomeController($scope, githubService, weatherService) {
     });
 
     //TODO: Need to debug
-    // weatherService.getMainObj().then(function (weather) {
-    //    $scope.mainObj =  weather;
-    // });
 
-    weatherService.getWeatherObj().then(function (main) {
+    weatherService.getWeatherTemp().then(function (main) {
         $scope.weatherObj =  main;
     });
-
-
-
-
-    // vm.weatherService = weatherService;
-    // console.log(weatherService);
-
-    // vm.githubService = function() {
-    //     githubService.save(this.newGithub,function () {
-    //
-    //     });
-    // };
-
-    // vm.treehouseService = treehouseService.treehouseObj;
-    // console.log(treehouseService);
 
 
 }

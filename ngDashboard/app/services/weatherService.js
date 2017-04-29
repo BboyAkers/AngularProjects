@@ -25,18 +25,20 @@ function weatherService($http) {
                     data = JSON.parse(data);
                 }
                 data = {weather: data};
+                console.log(data)
                 return data;
             });
     };
 
-    this.getMainObj = function () {
+    this.getWeatherTemp = function () {
         return this.getWeather().then(function (data) {
-            return data.weather;
+            return data.main.temp;
         });
     };
-    this.getWeatherObj = function () {
+    
+    this.getWeatherDescription = function () {
         return this.getWeather().then(function (data) {
-            return data.main;
+            return data.weather[0].description;
         });
     };
 

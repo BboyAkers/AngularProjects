@@ -20,6 +20,7 @@ function githubService($http) {
                     data = JSON.parse(data);
                 }
                 data = {repos: data};
+                console.log(data);
                 return data;
             });
     };
