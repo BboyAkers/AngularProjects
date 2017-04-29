@@ -32,13 +32,13 @@ function weatherService($http) {
 
     this.getWeatherTemp = function () {
         return this.getWeather().then(function (data) {
-            return data.main.temp;
+            return data.weather.main.temp;
         });
     };
     
     this.getWeatherDescription = function () {
         return this.getWeather().then(function (data) {
-            return data.weather[0].description;
+            return data.weather.weather[0].description;
         });
     };
 

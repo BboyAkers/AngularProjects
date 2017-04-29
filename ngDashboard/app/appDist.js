@@ -117,13 +117,13 @@ function weatherService($http) {
 
     this.getWeatherTemp = function () {
         return this.getWeather().then(function (data) {
-            return data.main.temp;
+            return data.weather.main.temp;
         });
     };
     
     this.getWeatherDescription = function () {
         return this.getWeather().then(function (data) {
-            return data.weather[0].description;
+            return data.weather.weather[0].description;
         });
     };
 
@@ -149,25 +149,14 @@ function HomeController($scope, githubService, weatherService) {
     });
 
     //TODO: Need to debug
-    // weatherService.getMainObj().then(function (weather) {
-    //    $scope.mainObj =  weather;
-    // });
 
-    weatherService.getWeatherObj().then(function (main) {
-        $scope.weatherObj =  main;
+    weatherService.getWeatherTemp().then(function (temp) {
+        $scope.weatherTemp =  temp;
     });
 
-
-
-
-    // vm.weatherService = weatherService;
-    // console.log(weatherService);
-
-    // vm.githubService = function() {
-    //     githubService.save(this.newGithub,function () {
-    //
-    //     });
-    // };
+    weatherService.getWeatherDescription().then(function(desc){
+        $scope.weatherDesc = desc;
+    });
 
 
 }

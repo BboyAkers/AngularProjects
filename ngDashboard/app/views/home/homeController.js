@@ -16,8 +16,12 @@ function HomeController($scope, githubService, weatherService) {
 
     //TODO: Need to debug
 
-    weatherService.getWeatherTemp().then(function (main) {
-        $scope.weatherObj =  main;
+    weatherService.getWeatherTemp().then(function (temp) {
+        $scope.weatherTemp =  temp;
+    });
+
+    weatherService.getWeatherDescription().then(function(desc){
+        $scope.weatherDesc = desc;
     });
 
 
