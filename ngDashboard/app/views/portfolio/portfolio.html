@@ -1,33 +1,10 @@
 <div class="container">
     <div class="row">
         <div class="center-block">
-            <div class="btn btn-primary">Professional</div>
-            <div class="btn btn-primary">Personal</div>
-            <div class="btn btn-primary">Fun</div>
+            <div ui-sref="portfolio.professionalProjects" class="btn btn-primary">Professional</div>
+            <div ui-sref="portfolio.personalProjects" class="btn btn-primary">Personal</div>
+            <div ui-sref="portfolio.funProjects" class="btn btn-primary">Fun</div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-4 ">
-            <div class="projectDiv">Project Bubble 1</div>
-        </div>
-        <div class="col-md-4 ">
-            <div class="projectDiv">Project Bubble 2</div>
-        </div>
-        <div class="col-md-4 ">
-            <div class="projectDiv">Project Bubble 3</div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4 ">
-            <div class="projectDiv">Project Bubble 4</div>
-        </div>
-        <div class="col-md-4 ">
-            <div class="projectDiv">Project Bubble 5</div>
-        </div>
-        <div class="col-md-4 ">
-            <div class="projectDiv">Project Bubble 6</div>
-        </div>
-    </div>
-
+    <div ui-view></div>
 </div>

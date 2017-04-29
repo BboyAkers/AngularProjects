@@ -15,11 +15,26 @@ app.config(['$locationProvider','$stateProvider', function ($locationProvider, $
             controllerAs: 'home'
         })
         .state('portfolio', {
+            // abstract: true,
             url: '/portfolio',
             templateUrl: '/views/portfolio/portfolio.html',
             controller: 'PortfolioController',
             controllerAs: 'portfolio'
         })
+        //Nested portfolio states
+        .state('portfolio.professionalProjects', {
+            url: '/professional',
+            templateUrl: '/views/portfolio/professionalProjects.html',
+        })
+        .state('portfolio.personalProjects', {
+            url: '/personal',
+            templateUrl: '/views/portfolio/personalProjects.html',
+        })
+        .state('portfolio.funProjects', {
+            url: '/fun',
+            templateUrl: '/views/portfolio/funProjects.html',
+        })
+        //Main tab
         .state('invoicing', {
             url: '/invoicing',
             templateUrl: '/views/invoicing/invoicing.html',

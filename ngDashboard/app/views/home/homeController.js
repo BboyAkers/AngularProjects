@@ -26,6 +26,5 @@ function HomeController($scope, githubService, weatherService) {
 
 
 }
-     HomeController.$inject = [];
 
 }());

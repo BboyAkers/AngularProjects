@@ -15,11 +15,26 @@ app.config(['$locationProvider','$stateProvider', function ($locationProvider, $
             controllerAs: 'home'
         })
         .state('portfolio', {
+            // abstract: true,
             url: '/portfolio',
             templateUrl: '/views/portfolio/portfolio.html',
             controller: 'PortfolioController',
             controllerAs: 'portfolio'
         })
+        //Nested portfolio states
+        .state('portfolio.professionalProjects', {
+            url: '/professional',
+            templateUrl: '/views/portfolio/professionalProjects.html',
+        })
+        .state('portfolio.personalProjects', {
+            url: '/personal',
+            templateUrl: '/views/portfolio/personalProjects.html',
+        })
+        .state('portfolio.funProjects', {
+            url: '/fun',
+            templateUrl: '/views/portfolio/funProjects.html',
+        })
+        //Main tab
         .state('invoicing', {
             url: '/invoicing',
             templateUrl: '/views/invoicing/invoicing.html',
@@ -63,7 +78,7 @@ function githubService($http) {
                     data = JSON.parse(data);
                 }
                 data = {repos: data};
-                console.log(data);
+                // console.log(data);
                 return data;
             });
     };
@@ -110,7 +125,7 @@ function weatherService($http) {
                     data = JSON.parse(data);
                 }
                 data = {weather: data};
-                console.log(data)
+                // console.log(data)
                 return data;
             });
     };
@@ -160,7 +175,6 @@ function HomeController($scope, githubService, weatherService) {
 
 
 }
-     HomeController.$inject = [];
 
 }());
 (function(){
