@@ -18,7 +18,7 @@
 .professionalCard-1 {
     width: 100%;
     height: 100%;
-    background-image: url("../assets/portfolio/professional/smartendingCapture.jpg");
+    /*background-image: url("../assets/portfolio/professional/smartendingCapture.jpg");*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left top;
@@ -65,15 +65,25 @@ ng-card to image class
 }
 
 .projectDiv:hover .cardHover {
-    background-color: #000000;
-    opacity: 0.5;
+  opacity: 1;
 }
 
 .hoverText {
-    opacity: 1;
+    padding-right: 20px;
     color: #FCFBE3;
     bottom: 10px;
     position: absolute;
     right: 0;
     font-size: 34px;
+}
+
+.professionalCard {
+     background-image: url('../assets/portfolio/professional/300x300.png');
+     width: 100%;
+     height: 100%;
+     position: absolute;
+}
+
+.projectDiv:hover .professionalCard {
+    opacity: 0.5;
 }
