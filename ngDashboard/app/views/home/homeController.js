@@ -14,7 +14,7 @@ function HomeController($scope, githubService, weatherService) {
         $scope.githubRepo = repos;
     });
 
-    //TODO: Need to debug
+    //TODO: Need to link weather icon
 
     weatherService.getWeatherTemp().then(function (temp) {
         $scope.weatherTemp =  temp;
