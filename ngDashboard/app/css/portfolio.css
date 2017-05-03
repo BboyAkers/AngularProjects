@@ -78,7 +78,7 @@ ng-card to image class
 }
 
 .professionalCard {
-     background-image: url('../assets/portfolio/professional/300x300.pnggi');
+     background-image: url('../assets/portfolio/professional/300x300.png');
      width: 100%;
      height: 100%;
      position: absolute;
@@ -86,4 +86,18 @@ ng-card to image class
 
 .projectDiv:hover .professionalCard {
     opacity: 0.5;
+}
+
+
+/*Fun Projects*/
+
+.funProjects {
+    width: 100%;
+    height: 100%;
+}
+
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
 }

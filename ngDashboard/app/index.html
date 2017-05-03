@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myDash" class="no-js"><!--<![endif]-->
+<html lang="en" ng-app="myDash" class="no-js">
+<!--<![endif]-->
+
 <head>
     <base href="/">
     <meta charset="utf-8">
@@ -17,69 +19,78 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body>
-<div class="mdl-layout__container has-scrolling-header">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+    <div class="mdl-layout__container has-scrolling-header">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
             mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <div class="mdl-layout-spacer"></div>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
-                     <div class="mdl-textfield__expandable-holder">
-                        <input class="mdl-textfield__input" type="text" name="sample"
-                               id="fixed-header-drawer-exp">
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+                        </div>
                     </div>
                 </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Dashboard</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" ui-sref="home">Home</a>
+                    <a class="mdl-navigation__link" ui-sref="portfolio">Portfolio</a>
+                    <a class="mdl-navigation__link" ui-sref="invoicing">Invoicing</a>
+                    <a class="mdl-navigation__link" ui-sref="email">Email</a>
+                    <a class="mdl-navigation__link" ui-sref="news">News</a>
+                </nav>
             </div>
-        </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Dashboard</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" ui-sref="home">Home</a>
-                <a class="mdl-navigation__link" ui-sref="portfolio">Portfolio</a>
-                <a class="mdl-navigation__link" ui-sref="invoicing">Invoicing</a>
-                <a class="mdl-navigation__link" ui-sref="email">Email</a>
-                <a class="mdl-navigation__link" ui-sref="news">News</a>
-            </nav>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <div class="mdl-layout__container" ui-view></div>
+                </div>
+            </main>
         </div>
-        <main class="mdl-layout__content">
-            <div class="page-content">
-                <div class="mdl-layout__container" ui-view></div>
-            </div>
-        </main>
     </div>
-</div>
-<!--<div>Angular seed app: v<span app-version></span></div>-->
+    <!--<div>Angular seed app: v<span app-version></span></div>-->
 
-<!-- In production use:
+    <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
 
-<!--Dependencies-->
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="bower_components/material-design-lite/material.min.js"></script>
-<!--<script src="bower_components/angular-resource/angular-resource.js"></script>-->
+    <!--Dependencies-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/material-design-lite/material.min.js"></script>
+    <!--<script src="bower_components/angular-resource/angular-resource.js"></script>-->
 
 
-<!--<script src="app.js"></script>-->
-<script src="appDist.js"></script>
+    <!--<script src="app.js"></script>-->
+    <script src="appDist.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handjs/1.3.11/hand.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/babylonjs/2.5.0/babylon.js"></script>-->
+    <script src="js/babylon.2.4.js"></script>
+    <script src="js/solarSystem.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            BjsApp.init();
+        });
+    </script>
+    <!--Services-->
+    <!--<script src="services/weatherService.js"></script>-->
+    <!--<script src="services/githubService.js"></script>-->
+    <!--<script src="services/treehouseService.js"></script>-->
 
-<!--Services-->
-<!--<script src="services/weatherService.js"></script>-->
-<!--<script src="services/githubService.js"></script>-->
-<!--<script src="services/treehouseService.js"></script>-->
-
-<!--Controllers-->
-<!--<script src="views/home/homeController.js"></script>-->
-<!--<script src="views/portfolio/portfolioController.js"></script>-->
-<!--<script src="views/invoicing/invoiceController.js"></script>-->
-<!--<script src="views/email/emailController.js"></script>-->
-<!--<script src="views/news/newsController.js"></script>-->
+    <!--Controllers-->
+    <!--<script src="views/home/homeController.js"></script>-->
+    <!--<script src="views/portfolio/portfolioController.js"></script>-->
+    <!--<script src="views/invoicing/invoiceController.js"></script>-->
+    <!--<script src="views/email/emailController.js"></script>-->
+    <!--<script src="views/news/newsController.js"></script>-->
 
 
 </body>
+
 </html>
