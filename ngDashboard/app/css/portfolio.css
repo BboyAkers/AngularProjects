@@ -66,11 +66,12 @@ ng-card to image class
 
 .projectDiv:hover .cardHover {
   opacity: 1;
+  background-color: rgba(0,0,0,0.30);
 }
 
 .hoverText {
     padding-right: 20px;
-    color: #FCFBE3;
+    color: #F9F9F9;
     bottom: 10px;
     position: absolute;
     right: 0;
@@ -78,10 +79,17 @@ ng-card to image class
 }
 
 .professionalCard {
-     background-image: url('../assets/portfolio/professional/300x300.png');
+     /*background-image: url('../assets/portfolio/professional/300x300.png');*/
      width: 100%;
      height: 100%;
      position: absolute;
+}
+
+.professionalCard.card-6 {
+    background-image: url('../assets/portfolio/professional/smartending300x300.jpg');
+}
+.professionalCard.card-5 {
+    background-image: url('../assets/portfolio/professional/techEdventures300x300.png');
 }
 
 .projectDiv:hover .professionalCard {

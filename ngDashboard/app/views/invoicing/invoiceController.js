@@ -8,6 +8,6 @@
         var vm = this;
 
     }
-    InvoiceController.$inject = [];
+    // InvoiceController.$inject = [];
 
 }());
