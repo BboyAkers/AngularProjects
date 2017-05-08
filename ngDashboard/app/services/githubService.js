@@ -16,9 +16,9 @@ function githubService($http) {
             .then(function (response) {
                 var data = response.data;
 
-                if (typeof data === "string") {
-                    data = JSON.parse(data);
-                }
+                // if (typeof data === "string") {
+                //     data = JSON.parse(data);
+                // }
                 data = {repos: data};
                 // console.log(data);
                 return data;
