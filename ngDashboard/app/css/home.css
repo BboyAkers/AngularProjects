@@ -1,6 +1,12 @@
 body {
   background: rgba(226, 225, 224, 0.48);
 }
+
+.weatherHeading {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .portfolio-container {
   display: flex; }
   .portfolio-container div {

@@ -28,7 +28,7 @@
         </div>
         <div class="col-md-3 text-center">
             <div class="ng-card ng-depth-2">
-                <h3>Today's Weather</h3>
+                <h3 class="weatherHeading">Today's Weather</h3>
                 <img class="center" src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100">
                 <h4>{{weatherTemp}}</h4>
                 <p>{{weatherDesc}}</p>
@@ -41,7 +41,7 @@
             <div class="ng-card ng-depth-2 ng-width">
                 <h2 class="ng-heading repo-heading">Github Repository</h2>   
                 <div class="repoSection">
-                    <div ng-repeat="repos in githubRepo" class="ng-card ng-depth-4 repo-card">
+                    <div ng-repeat="repos in githubRepo track by $index" class="ng-card ng-depth-4 repo-card">
                         <h4>{{repos.name}}</h4>
                         <p>{{repos.description}}</p>
                         <p>{{repos.language}}</p>
