@@ -74,11 +74,11 @@ function githubService($http) {
             .then(function (response) {
                 var data = response.data;
 
-                if (typeof data === "string") {
-                    data = JSON.parse(data);
-                }
+                // if (typeof data === "string") {
+                //     data = JSON.parse(data);
+                // }
                 data = {repos: data};
-                // console.log(data);
+                console.log(data);
                 return data;
             });
     };
@@ -212,6 +212,8 @@ function HomeController($scope, githubService, weatherService) {
 
     function PortfolioController() {
         var vm = this;
+
+        
 
     }
 
