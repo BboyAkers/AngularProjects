@@ -15,9 +15,9 @@ function templateService($http) {
             .then(function (response) {
                 var data = response.data;
 
-                if (typeof data === "string") {
-                    data = JSON.parse(data);
-                }
+                // if (typeof data === "string") {
+                //     data = JSON.parse(data);
+                // }
                 data = {templates: data};
                 return data;
             });
