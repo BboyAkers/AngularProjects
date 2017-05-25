@@ -4,14 +4,14 @@
 
         .controller('StoreController', ['templateService', StoreController]);
 
-    function StoreController($scope, templateService) {
+    function StoreController(templateService) {
         vm = this;
 
-        templateService.getInfo().then(function (obj) {
-            vm.names;
+        templateService.getInfo().then(function (names) {
+            vm.names = names;
         })
 
 
     }
-
+    StoreController.$inject = ['templateService']
 }());

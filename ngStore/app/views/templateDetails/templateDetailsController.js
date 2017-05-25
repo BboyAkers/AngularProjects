@@ -1,5 +1,5 @@
 (function () {
-
+'use strict';
     angular.module('templateStore')
 
         .controller('StoreController', ['templateService', StoreController]);

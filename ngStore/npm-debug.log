@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\austi\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@4.0.3
+3 info using node@v6.3.1
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle angular-seed@0.0.0~prestart: angular-seed@0.0.0
+6 verbose lifecycle angular-seed@0.0.0~prestart: unsafe-perm in lifecycle true
+7 verbose lifecycle angular-seed@0.0.0~prestart: PATH: C:\Users\austi\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;D:\GitHub\AngularProjects\ngStore\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\austi\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Bitvise SSH Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Ruby23-x64\bin;C:\Users\austi\AppData\Roaming\npm;C:\Program Files\Git\usr\bin;C:\Users\austi\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Sublime Text 3;C:\php;C:\Users\austi\AppData\Roaming\Composer\vendor\bin;C:\Program Files (x86)\Microsoft VS Code\bin
+8 verbose lifecycle angular-seed@0.0.0~prestart: CWD: D:\GitHub\AngularProjects\ngStore
+9 silly lifecycle angular-seed@0.0.0~prestart: Args: [ '/d /s /c', 'npm install' ]
+10 silly lifecycle angular-seed@0.0.0~prestart: Returned: code: 0  signal: null
+11 info lifecycle angular-seed@0.0.0~start: angular-seed@0.0.0
+12 verbose lifecycle angular-seed@0.0.0~start: unsafe-perm in lifecycle true
+13 verbose lifecycle angular-seed@0.0.0~start: PATH: C:\Users\austi\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;D:\GitHub\AngularProjects\ngStore\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\austi\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Bitvise SSH Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Ruby23-x64\bin;C:\Users\austi\AppData\Roaming\npm;C:\Program Files\Git\usr\bin;C:\Users\austi\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Sublime Text 3;C:\php;C:\Users\austi\AppData\Roaming\Composer\vendor\bin;C:\Program Files (x86)\Microsoft VS Code\bin
+14 verbose lifecycle angular-seed@0.0.0~start: CWD: D:\GitHub\AngularProjects\ngStore
+15 silly lifecycle angular-seed@0.0.0~start: Args: [ '/d /s /c', 'http-server -a localhost -p 8000 -c-1 ./app' ]
+16 verbose stack Error: kill ENOSYS
+16 verbose stack     at exports._errnoException (util.js:1012:11)
+16 verbose stack     at process.kill (internal/process.js:172:13)
+16 verbose stack     at process.listener (C:\Users\austi\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+16 verbose stack     at emitNone (events.js:91:20)
+16 verbose stack     at process.emit (events.js:185:7)
+16 verbose stack     at processEmit (C:\Users\austi\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+16 verbose stack     at processEmit (C:\Users\austi\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+16 verbose stack     at Signal.wrap.onsignal (internal/process.js:199:44)
+17 verbose cwd D:\GitHub\AngularProjects\ngStore
+18 error Windows_NT 10.0.14393
+19 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\austi\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "start"
+20 error node v6.3.1
+21 error npm  v4.0.3
+22 error code ENOSYS
+23 error errno ENOSYS
+24 error syscall kill
+25 error kill ENOSYS
+26 error If you need help, you may report this error at:
+26 error     <https://github.com/npm/npm/issues>
+27 verbose exit [ 1, true ]

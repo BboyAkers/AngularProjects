@@ -1,3 +1,4 @@
+(function(){
 'use strict';
 
 angular.module('templateStore')
@@ -19,6 +20,7 @@ function templateService($http) {
                 //     data = JSON.parse(data);
                 // }
                 data = {templates: data};
+                console.log(data);
                 return data;
             });
     };
@@ -31,27 +33,4 @@ function templateService($http) {
 
     return this;
 }
-
-
-// 'use strict';
-// angular.module('myDash')
-//     .service('weatherService', ['$http', weatherService]);
-//
-// function weatherService($http) {
-//
-//
-//     this.getTemplates = function () {
-//         return this.getWeather().then(function (data) {
-//             return data.weather;
-//         });
-//     };
-//     this.getWeatherObj = function () {
-//         return this.getWeather().then(function (data) {
-//             return data.main;
-//         });
-//     };
-//
-//
-//     return this;
-// }
-
+}());

@@ -1,3 +1,4 @@
+(function(){
 'use strict';
 
 // Declare app level module which depends on views, and components
@@ -13,3 +14,4 @@ app.config(['$stateProvider', function ($stateProvider) {
           controllerAs: 'store'
       });
 }]);
+}());
