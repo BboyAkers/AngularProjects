@@ -21,9 +21,9 @@ function weatherService($http) {
             .then(function (response) {
                 var data = response.data;
 
-                if (typeof data === "string") {
-                    data = JSON.parse(data);
-                }
+                // if (typeof data === "string") {
+                //     data = JSON.parse(data);
+                // }
                 data = {weather: data};
                 // console.log(data)
                 return data;

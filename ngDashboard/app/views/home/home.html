@@ -45,6 +45,11 @@
                         <h4>{{repos.name}}</h4>
                         <p>{{repos.description}}</p>
                         <p>{{repos.language}}</p>
+                        <a ng-href="https://github.com/{{repos.owner.login}}/{{repos.name}}/archive/master.zip"><div class="btn btn-success">Download Here</div></a>
+                        <a ng-href="{{repos.clone_url}}" target="_blank"><div class="btn btn-primary">Visit Here</div></a>
+                        <br>
+                        <br>
+                        <!--<button>Download Here</button>-->
                     </div>
                 </div>
             </div>
