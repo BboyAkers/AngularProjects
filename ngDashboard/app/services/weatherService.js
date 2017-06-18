@@ -25,7 +25,7 @@ function weatherService($http) {
                 //     data = JSON.parse(data);
                 // }
                 data = {weather: data};
-                // console.log(data)
+                // console.log(data);
                 return data;
             });
     };

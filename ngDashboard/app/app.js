@@ -1,11 +1,17 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
- var app = angular.module('myDash', ['ui.router']);
+ var app = angular.module('myDash', ['ui.router', 'auth0']);
 
-app.config(['$locationProvider','$stateProvider', function ($locationProvider, $stateProvider) {
+app.config(['$locationProvider','$stateProvider', 'authProvider', function ($locationProvider, $stateProvider, authProvider) {
 
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
+
+    authProvider.init({
+        domain: 'mydomain.auth0.com',
+        clientID: 'myClientID',
+        loginUrl: '/login'
+    });
 
     $stateProvider
         .state('home', {
@@ -24,15 +30,15 @@ app.config(['$locationProvider','$stateProvider', function ($locationProvider, $
         //Nested portfolio states
         .state('portfolio.professionalProjects', {
             url: '/professional',
-            templateUrl: '/views/portfolio/professionalProjects.html',
+            templateUrl: '/views/portfolio/professionalProjects.html'
         })
         .state('portfolio.personalProjects', {
             url: '/personal',
-            templateUrl: '/views/portfolio/personalProjects.html',
+            templateUrl: '/views/portfolio/personalProjects.html'
         })
         .state('portfolio.funProjects', {
             url: '/fun',
-            templateUrl: '/views/portfolio/funProjects.html',
+            templateUrl: '/views/portfolio/funProjects.html'
         })
         //Main tab
         .state('invoicing', {
@@ -43,7 +49,6 @@ app.config(['$locationProvider','$stateProvider', function ($locationProvider, $
         })
         .state('email', {
             url: '/email',
-            templateUrl: '/views/email/email.html',
             controller: 'EmailController',
             controllerAs: 'email'
         })
@@ -55,3 +60,7 @@ app.config(['$locationProvider','$stateProvider', function ($locationProvider, $
         });
 
 }]);
+
+app.run(function(auth) {
+    auth.hookEvents();
+});
