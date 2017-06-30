@@ -8,20 +8,20 @@ function HomeController($scope, githubService, weatherService) {
     var vm = this;
 
     githubService.getAvatar().then(function(avatar_url) {
-        $scope.githubAvatar = avatar_url;
+        vm.githubAvatar = avatar_url;
     });
     githubService.getRepoInfo().then(function(repos) {
-        $scope.githubRepo = repos;
+        vm.githubRepo = repos;
     });
 
     //TODO: Need to link weather icon
 
     weatherService.getWeatherTemp().then(function (temp) {
-        $scope.weatherTemp =  temp;
+        vm.weatherTemp =  temp;
     });
 
     weatherService.getWeatherDescription().then(function(desc){
-        $scope.weatherDesc = desc;
+        vm.weatherDesc = desc;
     });
 
 
