@@ -10,7 +10,7 @@ export class AppComponent {
   newServerName = '';
   newServerContent = '';
 
-  onAddServer() {
+  onServerAdded() {
     this.serverElements.push({
       type: 'server',
       name: this.newServerName,
@@ -18,7 +18,7 @@ export class AppComponent {
     });
   }
 
-  onAddBlueprint() {
+  onBlueprintAdded() {
     this.serverElements.push({
       type: 'blueprint',
       name: this.newServerName,
