@@ -29,7 +29,6 @@ import { CockpitComponent } from './cockpit/cockpit.component';
   imports: [
     BrowserModule,
     FormsModule,
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
