@@ -11,6 +11,8 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,8 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipeDetailComponent,
     RecipeItemComponent,
     ShoppingEditComponent,
+    ServerElementComponent,
+    CockpitComponent,
   ],
   imports: [
     BrowserModule,
