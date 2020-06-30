@@ -2,15 +2,12 @@
   <app-header></app-header>
 </header>
 <section>
-  <button mat-raised-button color="primary">Hello Peeps</button>
-  <mat-grid-list cols="12">
-    <mat-grid-tile>
-      <app-recipes></app-recipes>
-    </mat-grid-tile>
-  </mat-grid-list>
-  <mat-grid-list cols="12">
-    <mat-grid-tile>
-      <app-shopping-list></app-shopping-list>
-    </mat-grid-tile>
-  </mat-grid-list>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <app-recipes></app-recipes>
+      </div>
+    </div>
+    <app-shopping-list></app-shopping-list>
+  </div>
 </section>
