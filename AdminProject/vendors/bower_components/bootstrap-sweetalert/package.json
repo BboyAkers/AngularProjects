@@ -15,7 +15,7 @@
     "url" : "http://github.com/lipis/bootstrap-sweetalert"
   },
   "dependencies": {
-    "bootstrap": "~3"
+    "bootstrap": "~4.0.0"
   },
   "devDependencies": {
     "grunt": "~0",
